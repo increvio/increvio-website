@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <rect width="300" height="400" rx="36" fill="#EEE8DF"/>
+  <ellipse cx="150" cy="386" rx="78" ry="8" fill="#DCD3C6"/>
+  <!-- Beine -->
+  <rect x="112" y="290" width="32" height="82" rx="13" fill="#24324A"/>
+  <rect x="156" y="290" width="32" height="82" rx="13" fill="#24324A"/>
+  <path d="M115 296 L115 366 M185 296 L185 366" stroke="#E8441F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M104 384 C102 370 112 364 128 364 C142 364 146 372 146 384 Z" fill="#F7F3EC"/>
+  <path d="M154 384 C154 372 158 364 172 364 C188 364 198 370 196 384 Z" fill="#F7F3EC"/>
+  <path d="M104 384 L146 384 M154 384 L196 384" stroke="#E8441F" stroke-width="4" stroke-linecap="round"/>
+  <!-- Rechter Arm: Hand in der Hüfte -->
+  <path d="M212 206 L242 250 L198 276" fill="none" stroke="#D7A07F" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M212 206 L226 226" stroke="#2B3442" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="198" cy="276" r="13" fill="#D7A07F"/>
+  <!-- Oberkörper: breites V -->
+  <path d="M80 200 C80 188 92 182 108 182 L192 182 C208 182 220 188 220 200 C220 236 204 268 190 296 L110 296 C96 268 80 236 80 200 Z" fill="#2B3442"/>
+  <path d="M110 296 L190 296" stroke="#1F2731" stroke-width="6" stroke-linecap="round"/>
+  <path d="M98 230 C116 244 136 244 147 236 M202 230 C184 244 164 244 153 236" fill="none" stroke="#1F2731" stroke-width="3" stroke-linecap="round"/>
+  <path d="M150 246 L150 290" stroke="#232C38" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Linker Arm: zeigt auf dich -->
+  <path d="M88 206 L56 246 L34 226" fill="none" stroke="#D7A07F" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M88 206 L74 224" stroke="#2B3442" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="34" cy="226" r="13" fill="#D7A07F"/>
+  <rect x="14" y="214" width="22" height="9" rx="4.5" fill="#D7A07F"/>
+  <path d="M30 230 L42 230" stroke="#C48B6A" stroke-width="2" stroke-linecap="round"/>
+  <!-- Hals und Kragen -->
+  <path d="M130 166 L128 192 C140 198 160 198 172 192 L170 166 Z" fill="#D7A07F"/>
+  <path d="M126 186 C134 198 166 198 174 186" fill="none" stroke="#1F2731" stroke-width="6" stroke-linecap="round"/>
+  <!-- Pfeifenband -->
+  <path d="M132 190 C130 180 134 172 140 168 M168 190 C176 182 184 176 188 170" fill="none" stroke="#E8441F" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Kopf -->
+  <circle cx="116" cy="138" r="8" fill="#CB9372"/>
+  <circle cx="184" cy="138" r="8" fill="#CB9372"/>
+  <rect x="114" y="94" width="72" height="84" rx="26" fill="#E0AC8A"/>
+  <path d="M116 140 C118 166 132 178 150 178 C168 178 182 166 184 140 C178 156 166 162 150 162 C134 162 122 156 116 140 Z" fill="#6B5E55" opacity="0.4"/>
+  <!-- Haare -->
+  <path d="M112 126 C108 96 126 84 150 84 C174 84 192 96 188 126 C186 112 180 104 172 100 C160 104 140 104 128 100 C120 104 114 112 112 126 Z" fill="#3E3632"/>
+  <path d="M113 124 C113 118 114 113 116 110 L117 122 Z M187 124 C187 118 186 113 184 110 L183 122 Z" fill="#8C847D"/>
+  <!-- Brauen: streng -->
+  <path d="M127 120 L145 126 M155 126 L173 120" stroke="#3E3632" stroke-width="5.5" stroke-linecap="round"/>
+  <!-- Augen -->
+  <path d="M129 131 A9 7 0 0 0 147 131 Z" fill="#FFFFFF"/>
+  <path d="M153 131 A9 7 0 0 0 171 131 Z" fill="#FFFFFF"/>
+  <circle cx="139" cy="133.5" r="3.6" fill="#2A1E1A"/><circle cx="161" cy="133.5" r="3.6" fill="#2A1E1A"/>
+  <path d="M127 131 L149 131 M151 131 L173 131" stroke="#2A1E1A" stroke-width="3" stroke-linecap="round"/>
+  <!-- Nase -->
+  <path d="M150 136 Q146 146 152 148" fill="none" stroke="#B98466" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- Aufgeblasene Backen -->
+  <circle cx="132" cy="156" r="9" fill="#EBB898"/>
+  <circle cx="168" cy="156" r="9" fill="#EBB898"/>
+  <!-- Pfeife im Mund -->
+  <rect x="146" y="153" width="28" height="9" rx="3" fill="#B7BEC4"/>
+  <circle cx="182" cy="160" r="10" fill="#D3D8DD"/>
+  <circle cx="182" cy="160" r="3.6" fill="#8E979F"/>
+  <ellipse cx="148" cy="157.5" rx="5" ry="6" fill="#8E3B2E"/>
+  <path d="M200 146 L210 140 M202 158 L214 158 M200 170 L210 176" stroke="#E8441F" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

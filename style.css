@@ -1,0 +1,125 @@
+/* Increvio – Website. Farben wie in der App (Assets.xcassets). */
+:root {
+  --glut: #E8441F;
+  --glut-text: #C9381A;      /* etwas dunkler, damit Text auf Hell gut lesbar ist */
+  --on-glut: #fff;
+  --bg: #FFF8F4;             /* Canvas */
+  --card: #FFFFFF;           /* CardSurface */
+  --border: #F1DDD3;         /* CardBorder */
+  --text: #1C1512;
+  --muted: #6E625C;
+  --todo-bg: #FFF1C2;
+  --todo-text: #6B4E00;
+  --radius: 22px;
+  --title: ui-rounded, "SF Pro Rounded", "Arial Rounded MT Bold", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --glut: #FF6B4A;
+    --glut-text: #FF8466;
+    --on-glut: #1C0C07;
+    --bg: #120D0B;
+    --card: #1E1916;
+    --border: #2E2622;
+    --text: #F7EFEA;
+    --muted: #B3A69F;
+    --todo-bg: #4A3A00;
+    --todo-text: #FFE08A;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.55 var(--body);
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--glut-text); }
+h1, h2, h3, .logo { font-family: var(--title); font-weight: 800; line-height: 1.15; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2.1rem, 8vw, 3.4rem); margin: 0 0 .4em; }
+h2 { font-size: clamp(1.5rem, 5vw, 2rem); margin: 2em 0 .5em; }
+h3 { font-size: 1.15rem; margin: 1.6em 0 .4em; }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+.narrow { max-width: 720px; }
+
+/* Kopf und Fuß */
+header.site { padding: 14px 0; }
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.logo { display: flex; align-items: center; gap: 8px; font-size: 1.35rem; color: var(--text); text-decoration: none; }
+.logo img { width: 30px; height: 30px; }
+nav.top a { color: var(--muted); text-decoration: none; margin-left: 16px; font-size: .95rem; }
+nav.top a:hover { color: var(--glut-text); }
+footer.site { margin-top: 72px; padding: 28px 0 40px; border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; }
+footer.site .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+footer.site nav a { color: var(--muted); margin-right: 16px; }
+
+/* Knöpfe */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--glut); color: var(--on-glut);
+  font: 700 1.05rem var(--title);
+  padding: 14px 22px; border-radius: 999px; text-decoration: none;
+}
+.btn small { font-weight: 500; opacity: .85; }
+.btn[aria-disabled="true"] { cursor: default; }
+
+/* Startseite */
+.hero { display: grid; gap: 28px; align-items: center; padding: 24px 0 8px; }
+.hero p.lead { font-size: 1.2rem; color: var(--muted); margin: 0 0 24px; max-width: 34em; }
+.hero .kicker { color: var(--glut-text); font: 700 .95rem var(--title); text-transform: uppercase; letter-spacing: .06em; margin: 0 0 10px; }
+.hero .art { display: flex; justify-content: center; }
+.hero .art img { width: min(190px, 52vw); }
+.launch { margin-top: 12px; color: var(--muted); font-size: .95rem; }
+
+.features { display: grid; gap: 14px; margin-top: 8px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+.card h3 { margin-top: 0; }
+.card p { margin: 0; color: var(--muted); }
+.card .icon { font-size: 1.6rem; line-height: 1; margin-bottom: 10px; }
+
+.shots { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 16px 16px; margin: 0 -16px; }
+.shots figure { margin: 0; flex: 0 0 min(64vw, 240px); scroll-snap-align: center; }
+.shots img { border-radius: 30px; border: 1px solid var(--border); box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+.shots figcaption { text-align: center; color: var(--muted); font-size: .92rem; margin-top: 10px; }
+
+.coaches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.coaches figure { margin: 0; }
+.coaches img { border-radius: var(--radius); }
+.coaches figcaption { margin-top: 8px; font-weight: 600; }
+.coaches figcaption span { display: block; color: var(--muted); font-weight: 400; font-size: .92rem; }
+
+.note { color: var(--muted); font-size: .92rem; }
+
+@media (min-width: 760px) {
+  .hero { grid-template-columns: 1.3fr 1fr; padding-top: 56px; }
+  .hero .art img { width: 300px; }
+  .features { grid-template-columns: repeat(3, 1fr); }
+  .shots { overflow: visible; margin: 0; padding: 4px 0 16px; justify-content: space-between; }
+  .shots figure { flex: 1 1 0; }
+  .coaches { grid-template-columns: repeat(2, 260px); }
+}
+
+/* Rechtstexte */
+.legal h2 { font-size: 1.35rem; margin-top: 2.2em; }
+.legal h3 { font-size: 1.08rem; }
+.legal ul, .legal ol { padding-left: 1.3em; }
+.legal li { margin: .3em 0; }
+.legal .table { overflow-x: auto; margin: 1em 0; }
+.legal table { border-collapse: collapse; width: 100%; font-size: .93rem; min-width: 560px; }
+.legal th, .legal td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+.legal th { font-family: var(--title); }
+.legal code { font-size: .9em; }
+mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 1px 5px; border-radius: 6px; font-weight: 600; }
+.box { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; margin: 1em 0; }
+
+/* Support */
+details { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 14px 18px; margin: 10px 0; }
+summary { cursor: pointer; font-weight: 600; }
+details p { color: var(--muted); margin: 10px 0 0; }
+.box p { margin: 0; }
