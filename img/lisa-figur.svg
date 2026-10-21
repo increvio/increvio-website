@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <ellipse cx="150" cy="386" rx="60" ry="7" fill="#E3CDBE"/>
+  <g transform="translate(0 -16)">
+  <!-- Pferdeschwanz, schwingt zur Seite -->
+  <path d="M130 100 C104 84 78 94 70 122 C66 136 70 150 78 158 C78 140 90 126 108 124 C116 122 124 118 130 112 Z" fill="#D2AE6E"/>
+  <path d="M110 98 C94 98 82 108 78 124" fill="none" stroke="#E9CC8E" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- Beine: Leggings, schlank und lang -->
+  <path d="M121 270 C115 282 116 296 121 312 C124 330 127 352 129 370 L144 370 L148.5 304 L151.5 304 L156 370 L171 370 C173 352 176 330 179 312 C184 296 185 282 179 270 Z" fill="#24324A"/>
+  <path d="M150 284 L150 304" stroke="#1B2638" stroke-width="2" stroke-linecap="round"/>
+  <path d="M116 384 C114 372 122 366 134 366 C144 366 148 372 148 384 Z" fill="#F7F3EC"/>
+  <path d="M152 384 C152 372 156 366 166 366 C178 366 186 372 184 384 Z" fill="#F7F3EC"/>
+  <path d="M116 384 L148 384 M152 384 L184 384" stroke="#E8441F" stroke-width="3.5" stroke-linecap="round"/>
+  <g transform="translate(0 -16)">
+  <!-- Linker Arm: Hand in der Hüfte -->
+  <path d="M121 198 L96 236 L122 260" fill="none" stroke="#1F1D20" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Rechter Arm: Stoppuhr hoch -->
+  <path d="M179 198 L210 226 L208 168" fill="none" stroke="#1F1D20" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="210" cy="162" r="9" fill="#F2CDAC"/>
+  <!-- Oberkörper: Sanduhr: Schultern und Hüfte gleich breit, schmale Taille -->
+  <path d="M118 196 C118 189 124 185 132 185 L168 185 C176 185 182 189 182 196 C189 210 190 230 182 242 C178 252 175 258 175 266 C176 276 179 282 182 288 L118 288 C121 282 124 276 125 266 C125 258 122 252 118 242 C110 230 111 210 118 196 Z" fill="#1F1D20"/>
+  <path d="M149 229 C146 238 136 241 128 233 M151 229 C154 238 164 241 172 233" fill="none" stroke="#3A3640" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M118 288 L182 288" stroke="#1B2638" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="124" cy="261" r="9" fill="#F2CDAC"/>
+  <!-- Ausschnitt -->
+  <path d="M138 184 C141 199 146 207 150 209 C154 207 159 199 162 184 Z" fill="#F2CDAC"/>
+  <path d="M140 186 C143 198 147 204 150 205 C153 204 157 198 160 186" fill="none" stroke="#E6C26A" stroke-width="1.2"/>
+  <!-- Stoppuhr -->
+  <rect x="205" y="118" width="10" height="7" rx="2" fill="#B7BEC4"/>
+  <circle cx="210" cy="140" r="17" fill="#E8441F"/>
+  <circle cx="210" cy="140" r="12.5" fill="#FFFFFF"/>
+  <path d="M210 140 L210 131 M210 140 L217 143" stroke="#2A1E1A" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- Hals -->
+  <path d="M141 160 L140 188 L160 188 L159 160 Z" fill="#F2CDAC"/>
+  <path d="M141 164 C145 172 155 172 159 164 L159 160 L141 160 Z" fill="#DDB08E"/>
+  <!-- Kopf -->
+  <circle cx="121" cy="132" r="6" fill="#E4B795"/><circle cx="179" cy="132" r="6" fill="#E4B795"/>
+  <circle cx="121" cy="139" r="1.9" fill="#E6C26A"/><circle cx="179" cy="139" r="1.9" fill="#E6C26A"/>
+  <rect x="120" y="96" width="60" height="72" rx="26" fill="#F2CDAC"/>
+  <!-- Haare vorne -->
+  <path d="M118 126 C114 98 130 84 152 84 C172 84 186 98 182 122 C178 108 170 100 158 98 C146 104 130 112 118 126 Z" fill="#E3C285"/>
+  <path d="M120 112 C116 124 118 136 122 144 C123 134 123 124 126 116 Z" fill="#E3C285"/>
+  <rect x="122" y="94" width="10" height="6" rx="2.5" fill="#E8441F" transform="rotate(35 127 97)"/>
+  <!-- Brauen: eine hochgezogen -->
+  <path d="M127 115 Q134 106 143 112" fill="none" stroke="#B48A50" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M157 117 L172 115" fill="none" stroke="#B48A50" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- Augen: Seitenblick zur Stoppuhr -->
+  <path d="M127 126 A9 7.5 0 0 0 145 126 Z" fill="#FFFFFF"/>
+  <path d="M155 126 A9 7.5 0 0 0 173 126 Z" fill="#FFFFFF"/>
+  <circle cx="140" cy="128.6" r="3.8" fill="#3F7F86"/><circle cx="168" cy="128.6" r="3.8" fill="#3F7F86"/>
+  <circle cx="140" cy="128.6" r="1.8" fill="#1E1A18"/><circle cx="168" cy="128.6" r="1.8" fill="#1E1A18"/>
+  <path d="M125 126 L147 126 M153 126 L175 126" stroke="#2A1E1A" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M125.5 126 L122 123 M174.5 126 L178 123" stroke="#2A1E1A" stroke-width="2" stroke-linecap="round"/>
+  <!-- Nase, schiefes Lächeln -->
+  <path d="M151 132 Q148.5 139 152 140" fill="none" stroke="#D59878" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M142 151 Q154 155 162 147" fill="none" stroke="#C25B55" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="131" cy="141" rx="5" ry="3.2" fill="#F09A86" opacity="0.3"/>
+  <ellipse cx="169" cy="141" rx="5" ry="3.2" fill="#F09A86" opacity="0.3"/>
+  </g>
+</svg>

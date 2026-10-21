@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <ellipse cx="152" cy="386" rx="74" ry="8" fill="#000" opacity=".18"/>
+  <!-- Beine -->
+  <rect x="116" y="296" width="28" height="76" rx="12" fill="#24324A"/>
+  <rect x="158" y="296" width="28" height="76" rx="12" fill="#24324A"/>
+  <path d="M119 302 L119 366 M183 302 L183 366" stroke="#E8441F" stroke-width="4" stroke-linecap="round"/>
+  <!-- Sneaker -->
+  <path d="M108 384 C106 370 116 364 130 364 C142 364 146 372 146 384 Z" fill="#F7F3EC"/>
+  <path d="M156 384 C156 372 160 364 172 364 C186 364 196 370 194 384 Z" fill="#F7F3EC"/>
+  <path d="M108 384 L146 384 M156 384 L194 384" stroke="#E8441F" stroke-width="4" stroke-linecap="round"/>
+  <!-- Rechter Arm: Hand in der Hüfte -->
+  <path d="M200 210 L234 252 L196 280" fill="none" stroke="#24324A" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M206 212 L238 250" stroke="#E8441F" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="194" cy="280" r="12" fill="#F2B866"/>
+  <!-- Oberkörper: breite Brust, schmale Hüfte -->
+  <path d="M92 202 C92 192 100 188 112 188 L188 188 C200 188 208 192 208 202 C208 236 196 270 186 302 L114 302 C104 270 92 236 92 202 Z" fill="#24324A"/>
+  <path d="M150 196 L150 302" stroke="#C9CED3" stroke-width="3"/>
+  <rect x="145.5" y="204" width="9" height="14" rx="3.5" fill="#C9CED3"/>
+  <path d="M114 302 L186 302" stroke="#1B2638" stroke-width="6" stroke-linecap="round"/>
+  <path d="M104 236 C118 246 134 246 146 240 M196 236 C182 246 166 246 154 240" fill="none" stroke="#1B2638" stroke-width="3" stroke-linecap="round"/>
+  <!-- Linker Arm: Bizeps-Flex -->
+  <path d="M100 206 L46 208 L50 152" fill="none" stroke="#24324A" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M90 200 C88 176 66 172 56 188 Z" fill="#24324A"/>
+  <ellipse cx="72" cy="192" rx="20" ry="16" fill="#24324A"/>
+  <path d="M96 212 L54 214" stroke="#E8441F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M60 182 C66 176 76 175 84 180" fill="none" stroke="#33445E" stroke-width="3" stroke-linecap="round"/>
+  <rect x="37" y="160" width="27" height="10" rx="4" fill="#E8441F"/>
+  <circle cx="50" cy="146" r="14" fill="#F2B866"/>
+  <path d="M43 140 L57 140 M43 146 L57 146" stroke="#D9963F" stroke-width="2" stroke-linecap="round"/>
+  <!-- Mähne: kantig, mit Tolle -->
+  <path d="M94 150 L80 116 L102 106 L94 76 L122 82 L128 54 L150 68 L172 46 L180 78 L208 74 L200 106 L222 116 L208 150 L220 182 L194 190 L188 210 L150 200 L112 210 L106 190 L80 182 Z" fill="#B4561E" stroke="#B4561E" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M106 148 L96 120 L114 112 L110 90 L132 94 L138 72 L152 86 L168 68 L172 92 L192 90 L188 112 L206 120 L196 148 L204 172 L184 178 L180 194 L150 186 L120 194 L116 178 L96 172 Z" fill="#CF6E2B" stroke="#CF6E2B" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M128 76 C132 40 184 30 198 56 C186 50 168 52 158 68 C150 64 138 68 128 76 Z" fill="#CF6E2B"/>
+  <path d="M146 58 C160 44 180 42 190 50" fill="none" stroke="#E08A44" stroke-width="3" stroke-linecap="round"/>
+  <!-- Pfeife -->
+  <path d="M136 196 L146 222 M164 196 L154 222" stroke="#E8441F" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="150" cy="231" r="9" fill="#C9CED3"/>
+  <rect x="154" y="222" width="16" height="7" rx="2.5" fill="#B7BEC4" transform="rotate(-25 162 225)"/>
+  <!-- Kopf, leicht geneigt -->
+  <g transform="rotate(-5 150 140)">
+    <circle cx="116" cy="96" r="11" fill="#F2B866"/><circle cx="116" cy="96" r="5.5" fill="#DE8E4C"/>
+    <circle cx="184" cy="96" r="11" fill="#F2B866"/><circle cx="184" cy="96" r="5.5" fill="#DE8E4C"/>
+    <rect x="108" y="88" width="84" height="96" rx="36" fill="#F2B866"/>
+    <path d="M118 152 C118 138 182 138 182 152 C182 172 168 182 150 182 C132 182 118 172 118 152 Z" fill="#FCE3B6"/>
+    <!-- Augen: halb geschlossen, Seitenblick -->
+    <path d="M121 127 A11 9 0 0 0 143 127 Z" fill="#FFFFFF"/>
+    <path d="M157 127 A11 9 0 0 0 179 127 Z" fill="#FFFFFF"/>
+    <circle cx="138" cy="130" r="4.3" fill="#2B2320"/>
+    <circle cx="174" cy="130" r="4.3" fill="#2B2320"/>
+    <path d="M119 127 L145 127 M155 127 L181 127" stroke="#2B2320" stroke-width="3.2" stroke-linecap="round"/>
+    <!-- Brauen: eine hochgezogen -->
+    <path d="M120 112 Q132 99 146 108" fill="none" stroke="#7A3512" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M155 118 L182 113" fill="none" stroke="#7A3512" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Nase -->
+    <path d="M139 143 Q150 137 161 143 Q159 152 150 154 Q141 152 139 143 Z" fill="#5A3125"/>
+    <!-- Schiefes Grinsen -->
+    <path d="M138 166 Q154 172 168 159" fill="none" stroke="#5A3125" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M168 159 L171 155" stroke="#5A3125" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+</svg>

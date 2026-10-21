@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+<ellipse cx="152" cy="386" rx="74" ry="8" fill="#000" opacity="0.12"/>
+  <!-- Beine -->
+  <rect x="116" y="296" width="28" height="76" rx="12" fill="#24324A"/>
+  <rect x="158" y="296" width="28" height="76" rx="12" fill="#24324A"/>
+  <path d="M119 302 L119 366 M183 302 L183 366" stroke="#E8441F" stroke-width="4" stroke-linecap="round"/>
+  <!-- Sneaker -->
+  <path d="M108 384 C106 370 116 364 130 364 C142 364 146 372 146 384 Z" fill="#F7F3EC"/>
+  <path d="M156 384 C156 372 160 364 172 364 C186 364 196 370 194 384 Z" fill="#F7F3EC"/>
+  <path d="M108 384 L146 384 M156 384 L194 384" stroke="#E8441F" stroke-width="4" stroke-linecap="round"/>
+  <!-- Oberkörper: breite Brust, schmale Hüfte -->
+  <path d="M92 202 C92 192 100 188 112 188 L188 188 C200 188 208 192 208 202 C208 236 196 270 186 302 L114 302 C104 270 92 236 92 202 Z" fill="#24324A"/>
+  <path d="M150 196 L150 302" stroke="#C9CED3" stroke-width="3"/>
+  <rect x="145.5" y="204" width="9" height="14" rx="3.5" fill="#C9CED3"/>
+  <path d="M114 302 L186 302" stroke="#1B2638" stroke-width="6" stroke-linecap="round"/>
+  <path d="M104 236 C118 246 134 246 146 240 M196 236 C182 246 166 246 154 240" fill="none" stroke="#1B2638" stroke-width="3" stroke-linecap="round"/>
+  <!-- Mähne: kantig, mit Tolle -->
+  <path d="M94 150 L80 116 L102 106 L94 76 L122 82 L128 54 L150 68 L172 46 L180 78 L208 74 L200 106 L222 116 L208 150 L220 182 L194 190 L188 210 L150 200 L112 210 L106 190 L80 182 Z" fill="#B4561E" stroke="#B4561E" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M106 148 L96 120 L114 112 L110 90 L132 94 L138 72 L152 86 L168 68 L172 92 L192 90 L188 112 L206 120 L196 148 L204 172 L184 178 L180 194 L150 186 L120 194 L116 178 L96 172 Z" fill="#CF6E2B" stroke="#CF6E2B" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M128 76 C132 40 184 30 198 56 C186 50 168 52 158 68 C150 64 138 68 128 76 Z" fill="#CF6E2B"/>
+  <path d="M146 58 C160 44 180 42 190 50" fill="none" stroke="#E08A44" stroke-width="3" stroke-linecap="round"/>
+  <!-- Kopf, gerade, strahlt -->
+  <circle cx="116" cy="96" r="11" fill="#F2B866"/><circle cx="116" cy="96" r="5.5" fill="#DE8E4C"/>
+  <circle cx="184" cy="96" r="11" fill="#F2B866"/><circle cx="184" cy="96" r="5.5" fill="#DE8E4C"/>
+  <rect x="108" y="88" width="84" height="96" rx="36" fill="#F2B866"/>
+  <path d="M118 152 C118 138 182 138 182 152 C182 172 168 182 150 182 C132 182 118 172 118 152 Z" fill="#FCE3B6"/>
+  <!-- Brauen: hochgezogen vor Freude -->
+  <path d="M118 108 Q130 98 144 105" fill="none" stroke="#7A3512" stroke-width="5" stroke-linecap="round"/>
+  <path d="M156 105 Q170 98 182 108" fill="none" stroke="#7A3512" stroke-width="5" stroke-linecap="round"/>
+  <!-- Rote Bäckchen -->
+  <ellipse cx="122" cy="148" rx="8" ry="5" fill="#F08A7A" opacity="0.55"/>
+  <ellipse cx="178" cy="148" rx="8" ry="5" fill="#F08A7A" opacity="0.55"/>
+  <!-- Nase -->
+  <path d="M139 141 Q150 135 161 141 Q159 150 150 152 Q141 150 139 141 Z" fill="#5A3125"/>
+  <!-- Großes, offenes Lachen -->
+  <path d="M132 157 Q150 157 168 157 Q166 180 150 180 Q134 180 132 157 Z" fill="#7A2A1E"/>
+  <path d="M138 172 Q150 165 162 172 Q158 179 150 179 Q142 179 138 172 Z" fill="#E86B5C"/>
+  <path d="M134 158 L166 158" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <!-- Linker Arm -->
+  <path d="M100 206 L74 248 L136 240" fill="none" stroke="#24324A" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M96 214 L76 246" stroke="#E8441F" stroke-width="4" stroke-linecap="round"/>
+  <!-- Rechter Arm -->
+  <path d="M200 206 L226 248 L164 240" fill="none" stroke="#24324A" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M204 214 L224 246" stroke="#E8441F" stroke-width="4" stroke-linecap="round"/>
+  <!-- Pfoten formen ein Herz -->
+  <circle cx="140" cy="236" r="13" fill="#F2B866"/>
+  <circle cx="160" cy="236" r="13" fill="#F2B866"/>
+  <path d="M134 230 L136 236 M140 228 L141 234 M166 230 L164 236 M160 228 L159 234" stroke="#D9963F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M150 227.5 C130.5 215.5 135.8 199.0 150 208.3 C164.2 199.0 169.5 215.5 150 227.5 Z" fill="#E8441F"/>
+  <!-- Herz-Augen -->
+  <path d="M131 135.7 C114.1 125.3 118.7 111.0 131 119.1 C143.3 111.0 147.9 125.3 131 135.7 Z" fill="#E8441F"/>
+  <path d="M169 135.7 C152.1 125.3 156.7 111.0 169 119.1 C181.3 111.0 185.9 125.3 169 135.7 Z" fill="#E8441F"/>
+  <ellipse cx="126" cy="119" rx="3" ry="2.2" fill="#FFFFFF" opacity="0.8"/>
+  <ellipse cx="164" cy="119" rx="3" ry="2.2" fill="#FFFFFF" opacity="0.8"/>
+</svg>
