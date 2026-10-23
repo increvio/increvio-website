@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Einladung zu Increvio</title>
+<meta name="description" content="Du wurdest zu Increvio eingeladen. Zusammen bleibt ihr dran, und ihr bekommt beide 1 Monat Plus gratis.">
+<meta property="og:title" content="Du wurdest zu Increvio eingeladen">
+<meta property="og:description" content="Zusammen dranbleiben. Über den Link bekommt ihr beide 1 Monat Plus gratis.">
+<meta property="og:image" content="https://increvio.com/img/essen.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<style>
+  .code { font-family: var(--title); font-size: 2.6rem; letter-spacing: .25em; font-weight: 800; margin: .3em 0; }
+  .stack { display: flex; flex-direction: column; gap: 12px; max-width: 360px; }
+  .stack .btn { text-align: center; }
+  .btn.ghost { background: transparent; color: var(--glut-text); border: 2px solid var(--glut); }
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="/"><img src="/favicon.svg" alt="" width="30" height="30">Increvio</a>
+</div></header>
+<main class="wrap narrow">
+<div id="invite" hidden>
+<h1>Du wurdest eingeladen 💪</h1>
+<p>Zusammen bleibt ihr dran. Über diese Einladung bekommt ihr beide <strong>1 Monat Plus gratis</strong>.</p>
+<div id="withCode" hidden>
+  <p class="note">Dein Einladungscode</p>
+  <p class="code" id="code"></p>
+</div>
+<div class="stack">
+  <a class="btn" id="open" href="increvio://">In der App öffnen</a>
+  <a class="btn ghost" href="https://testflight.apple.com/join/SUXFCQPe">App laden</a>
+</div>
+<p class="note">Noch keine App? Erst laden, dann diesen Link noch mal antippen oder den Code unter „Freunde“ eingeben.</p>
+</div>
+<div id="missing">
+<h1>Seite nicht gefunden</h1>
+<p><a class="btn" href="/">Zur Startseite</a></p>
+</div>
+</main>
+<script>
+  // GitHub Pages zeigt diese Seite für jede unbekannte Adresse. Einladungen: /i/ABC123 (?challenge=… oder ?workout=…).
+  var match = location.pathname.match(/^\/i\/([A-Za-z0-9]{6})\/?$/);
+  if (match) {
+    var code = match[1].toUpperCase();
+    var query = new URLSearchParams(location.search);
+    var extra = new URLSearchParams();
+    ["challenge", "workout"].forEach(function (k) { var v = query.get(k); if (v && /^\d+$/.test(v)) extra.set(k, v); });
+    document.title = "Einladung zu Increvio";
+    document.getElementById("code").textContent = code;
+    document.getElementById("withCode").hidden = false;
+    document.getElementById("open").href = "increvio://invite/" + code + (extra.toString() ? "?" + extra.toString() : "");
+    document.getElementById("invite").hidden = false;
+    document.getElementById("missing").hidden = true;
+  }
+</script>
+</body>
+</html>
