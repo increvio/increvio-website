@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["ZV6F9S5488.com.increvio.Increvio"],
+        "components": [{ "/": "/einladen/*", "comment": "Einladungslinks öffnen die App" }]
+      }
+    ]
+  }
+}
