@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Increvio. Diesmal bleibst du dran.</title>
 <meta name="description" content="Increvio plant dein Essen, deinen Einkauf und dein Training. Freunde, deine Serie und dein Weg zum Traumkörper halten dich dran. Jetzt in der Beta, ab 10. November im App Store.">
-<meta name="theme-color" content="#FFF8F4" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#120D0B" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#120D0B">
 <meta property="og:title" content="Increvio. Diesmal bleibst du dran.">
 <meta property="og:description" content="Dein Coach plant Essen, Einkauf und Training. Freunde, deine Serie und dein Weg zum Traumkörper halten dich dran.">
 <meta property="og:image" content="https://increvio.com/img/essen.jpg">
@@ -14,6 +13,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="home.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -21,233 +21,257 @@
   <a class="brand" href="./"><img src="favicon.svg" alt="" width="28" height="28">Increvio</a>
   <nav>
     <a href="#so-gehts">So geht's</a>
-    <a href="#weg">Dein Weg</a>
+    <a href="#app">Die App</a>
     <a href="#freunde">Freunde</a>
     <a href="#preise">Preise</a>
     <a class="nav-cta" href="https://testflight.apple.com/join/SUXFCQPe">Beta testen</a>
   </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero">
+<!-- HERO: dunkle Glut-Bühne, eine Hauptaktion -->
+<section class="hero ember">
+  <div class="glow g1"></div><div class="glow g2"></div><div class="grain"></div>
   <div class="hero-inner">
     <div class="hero-copy">
-      <p class="pill"><span class="dot"></span> Beta offen · im App Store ab 10. November</p>
-      <h1>Diesmal<br><span class="accent">bleibst du dran.</span></h1>
+      <p class="pill"><span class="dot"></span>Beta offen · im App Store ab 10. November</p>
+      <h1>Diesmal<br>bleibst du <span class="fire">dran.</span></h1>
       <p class="lead">Du weißt, was du tun müsstest. Increvio sorgt dafür, dass du es tust: Dein Coach plant Essen, Einkauf und Training, und deine Freunde sehen, ob du lieferst.</p>
       <div class="cta-row">
         <a class="btn-primary" href="https://testflight.apple.com/join/SUXFCQPe">
           <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.47-.03-.01-2.3-.88-2.32-3.5zM14.2 6.14c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.67-.92 2.66.97.08 1.96-.49 2.56-1.21z"/></svg>
           Jetzt Beta testen
         </a>
-        <a class="btn-quiet" href="#so-gehts">So funktioniert's</a>
+        <a class="btn-ghost" href="#so-gehts">So funktioniert's</a>
       </div>
-      <p class="hint">Kostenlos über TestFlight, Apples Test-App.</p>
-      <ul class="trust">
-        <li>Für iPhone</li><li>Training, Serie und Freunde gratis</li><li>Daten in der EU</li>
-      </ul>
+      <p class="hint">Kostenlos über TestFlight, Apples Test-App. Für iPhone.</p>
     </div>
     <div class="hero-stage" aria-hidden="true">
-      <div class="phone p-left"><img src="img/training.jpg" alt="" width="506" height="1100"></div>
-      <div class="phone p-main"><img src="img/essen.jpg" alt="" width="506" height="1100"></div>
-      <div class="phone p-right"><img src="img/freunde.jpg" alt="" width="506" height="1100"></div>
-      <img class="hero-lion" src="img/loewe-happy.svg" alt="" width="300" height="400">
-      <div class="float-chip c1"><span class="ic">🔥</span><b>58</b> Tage am Stück</div>
-      <div class="float-chip c2"><span class="ic">✓</span> Mittagessen abgehakt</div>
-      <div class="float-chip c3"><span class="ic">👊</span> Anna stupst dich an</div>
+      <div class="fan">
+        <div class="phone f-left"><img src="img/training.jpg" alt="" width="506" height="1100"></div>
+        <div class="phone f-right"><img src="img/freunde.jpg" alt="" width="506" height="1100"></div>
+        <div class="phone f-main"><img src="img/essen.jpg" alt="" width="506" height="1100"></div>
+      </div>
+      <div class="chip c1"><span class="ic">🔥</span><b>58</b>&nbsp;Tage am Stück</div>
+      <div class="chip c2"><span class="ic ok">✓</span>Mittagessen abgehakt</div>
+      <div class="chip c3"><span class="ic">👊</span>Anna stupst dich an</div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
-<section class="stats reveal">
-  <div class="stat card"><b data-count="95">0</b><span>von 100 halten mit Freunden durch. Allein sind es 76.</span></div>
-  <div class="stat card"><b data-count="91">0</b><span>von 100 trainieren mit festem Plan. Ohne sind es 35.</span></div>
-  <div class="stat card"><b data-count="66">0</b><span>Tage dauert es im Schnitt, bis aus einem Vorsatz eine Gewohnheit wird.</span></div>
-  <p class="stats-src">Wing &amp; Jeffery 1999 · Milne et al. 2002 · Lally et al. 2010</p>
+<!-- LAUFBAND -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Wochenplan fürs Essen</span><span>Einkaufsliste</span><span>Prep am Sonntag</span><span>Training mit Steigerung</span><span>Serie mit Joker</span><span>Duo-Flamme</span><span>Anstupsen</span><span>Dein Weg zum Traumkörper</span>
+    <span>Wochenplan fürs Essen</span><span>Einkaufsliste</span><span>Prep am Sonntag</span><span>Training mit Steigerung</span><span>Serie mit Joker</span><span>Duo-Flamme</span><span>Anstupsen</span><span>Dein Weg zum Traumkörper</span>
+  </div>
+</div>
+
+<!-- PROBLEM: 100 Punkte, 5 glühen -->
+<section class="problem">
+  <div class="problem-copy reveal">
+    <p class="eyebrow">Das Problem</p>
+    <h2>Nach 30 Tagen nutzen nur noch <span class="hl">5 von 100</span> ihre Fitness-App.</h2>
+    <p class="sub">Nicht, weil sie nicht wissen, was zu tun ist. Sondern weil alles an ihnen hängt: planen, einkaufen, kochen, sich motivieren. Increvio nimmt dir die Arbeit ab und macht dich verbindlich.</p>
+  </div>
+  <div class="dots reveal" role="img" aria-label="100 Punkte, nur 5 davon leuchten"></div>
 </section>
 
-<!-- PROBLEM -->
-<section class="problem reveal">
-  <p class="eyebrow">Das Problem</p>
-  <h2>Nach 30 Tagen nutzen nur noch <span class="accent">5 von 100</span> ihre Fitness-App.</h2>
-  <p class="sub">Nicht, weil sie nicht wissen, was zu tun ist. Sondern weil alles an ihnen hängt: planen, einkaufen, kochen, sich motivieren. Increvio nimmt dir die Arbeit ab und macht dich verbindlich.</p>
+<!-- BEWEIS: Vergleichsbalken -->
+<section class="proof">
+  <p class="eyebrow reveal">Was wirklich hilft</p>
+  <h2 class="reveal">Zwei Hebel. Beide gut belegt.</h2>
+  <div class="proof-grid">
+    <div class="duel card reveal">
+      <h3>Mit Freunden</h3>
+      <div class="bar win"><span style="--v:95"></span><b><i data-count="95">0</i> von 100</b><em>halten durch</em></div>
+      <div class="bar"><span style="--v:76"></span><b>76 von 100</b><em>allein</em></div>
+      <p class="src">Wing &amp; Jeffery 1999</p>
+    </div>
+    <div class="duel card reveal">
+      <h3>Mit festem Plan</h3>
+      <div class="bar win"><span style="--v:91"></span><b><i data-count="91">0</i> von 100</b><em>trainieren</em></div>
+      <div class="bar"><span style="--v:35"></span><b>35 von 100</b><em>ohne Plan</em></div>
+      <p class="src">Milne et al. 2002</p>
+    </div>
+    <div class="big66 card reveal">
+      <b data-count="66">0</b>
+      <p>Tage dauert es im Schnitt, bis aus einem Vorsatz eine Gewohnheit wird. Nicht 21. Increvio trägt dich durch.</p>
+      <p class="src">Lally et al. 2010</p>
+    </div>
+  </div>
 </section>
 
-<!-- HOW -->
+<!-- SO GEHT'S -->
 <section id="so-gehts" class="how">
   <p class="eyebrow reveal">So geht's</p>
   <h2 class="reveal">Drei Minuten Einrichtung. Dann sagt dir Increvio jeden Tag, was dran ist.</h2>
-  <div class="steps">
-    <div class="step card reveal"><span class="num">1</span><h3>Ziel festlegen</h3><p>Muskeln aufbauen, abnehmen oder halten. Dazu deine Körperdaten und Trainingstage. Den Rest fragt Leo nach und nach.</p></div>
-    <div class="step card reveal"><span class="num">2</span><h3>Plan bekommen</h3><p>Essensplan mit Einkaufsliste und Prep-Anleitung für Sonntag, dazu Training fürs Gym oder zu Hause. Alles nach Studien berechnet.</p></div>
-    <div class="step card reveal"><span class="num">3</span><h3>Abhaken</h3><p>Zwei, drei Klicks am Tag. Deine Serie wächst, du kommst deinem Traumkörper näher, und deine Freunde sehen es.</p></div>
-  </div>
+  <ol class="steps">
+    <li class="step reveal"><span class="num">1</span><h3>Ziel festlegen</h3><p>Muskeln aufbauen, abnehmen oder halten. Dazu deine Körperdaten und Trainingstage. Den Rest fragt Leo nach und nach.</p></li>
+    <li class="step reveal"><span class="num">2</span><h3>Plan bekommen</h3><p>Essensplan mit Einkaufsliste und Prep-Anleitung für Sonntag, dazu Training fürs Gym oder zu Hause. Alles nach Studien berechnet.</p></li>
+    <li class="step reveal"><span class="num">3</span><h3>Abhaken</h3><p>Zwei, drei Klicks am Tag. Deine Serie wächst, du kommst deinem Traumkörper näher, und deine Freunde sehen es.</p></li>
+  </ol>
 </section>
 
-<!-- FEATURE: WEG ZUM TRAUMKÖRPER -->
-<section id="weg" class="feature reveal">
-  <div class="feature-copy">
-    <p class="eyebrow">Dein Weg</p>
-    <h2>Etappe für Etappe zu deinem Traumkörper.</h2>
-    <p class="lead-sm">Etappen, die sich von selbst freischalten: durch Training, deine Serie und dein Gewicht. Realistisch geplant, ohne „Sixpack in 4 Wochen“.</p>
-    <ol class="path">
-      <li class="card done"><span class="node">✓</span><div><b>Eine Woche dran</b><span>7 Tage Serie</span></div><em>geschafft</em></li>
-      <li class="card here"><span class="node">2</span><div><b>Spürbar stärker</b><span>9 von 12 Trainings</span></div><em>ca. Nov.</em></li>
-      <li class="card"><span class="node">3</span><div><b>Erste Veränderung sichtbar</b><span>nach etwa 3 Monaten</span></div><em>ca. Jan.</em></li>
-    </ol>
-    <ul class="checks">
-      <li>Bei jeder Etappe messen und sehen, was sich getan hat</li>
-      <li>Bist du schneller oder langsamer, passt sich dein Weg an</li>
-    </ul>
+<!-- DIE APP: Kapitel links, Handy rechts bleibt stehen und wechselt -->
+<section id="app" class="story">
+  <div class="story-steps">
+    <article class="chapter" data-shot="0">
+      <p class="eyebrow">Essen</p>
+      <h2>Nie wieder überlegen, was du heute isst.</h2>
+      <ul class="checks">
+        <li>Wochenplan nach Ziel, Geschmack, Budget und Kochzeit, aus über 160 Gerichten</li>
+        <li>Döner statt Bowl? Eintippen oder fotografieren, der Coach plant den Rest des Tages um</li>
+        <li>Essenszeiten nach Aufstehen, Training und Schlaf. Auch im Ramadan.</li>
+      </ul>
+      <div class="phone inline"><img src="img/essen.jpg" alt="Essen-Tab mit der nächsten Mahlzeit und dem Wochenplan" width="506" height="1100" loading="lazy"></div>
+    </article>
+    <article class="chapter" data-shot="1">
+      <p class="eyebrow">Einkauf</p>
+      <h2>Eine Liste. Sortiert wie dein Supermarkt.</h2>
+      <ul class="checks">
+        <li>Alles für die Woche, nach Bereichen von Obst bis Kühlregal</li>
+        <li>Teilbar mit deinem Partner, ihr hakt gemeinsam ab</li>
+        <li>Prep-Anleitung für Sonntag, Schritte parallel geplant</li>
+      </ul>
+      <div class="phone inline"><img src="img/einkauf.jpg" alt="Einkaufsliste nach Supermarkt-Bereichen" width="506" height="1100" loading="lazy"></div>
+    </article>
+    <article class="chapter" data-shot="2">
+      <p class="eyebrow">Training</p>
+      <h2>Ein Plan, der mit dir stärker wird.</h2>
+      <ul class="checks">
+        <li>Die Gewichte der letzten Einheit sind schon eingetragen</li>
+        <li>Die App sagt dir, wann du steigern kannst</li>
+        <li>86 Übungen, der Löwe macht sie dir vor</li>
+        <li>Keine Zeit? Plan B mit 20 Minuten, statt ganz auszufallen</li>
+      </ul>
+      <div class="phone inline"><img src="img/training.jpg" alt="Training heute: Oberkörper A mit Plan B" width="506" height="1100" loading="lazy"></div>
+    </article>
+    <article class="chapter" data-shot="3">
+      <p class="eyebrow">Dein Weg</p>
+      <h2>Etappe für Etappe zu deinem Traumkörper.</h2>
+      <ul class="checks">
+        <li>Etappen schalten sich frei: durch Training, Serie und Gewicht</li>
+        <li>Realistisch geplant, ohne „Sixpack in 4 Wochen“</li>
+        <li>Bist du schneller oder langsamer, passt sich dein Weg an</li>
+      </ul>
+      <div class="phone inline"><img src="img/weg.jpg" alt="Profil mit dem Weg zum Traumkörper: Etappe 2 von 8" width="506" height="1100" loading="lazy"></div>
+    </article>
+    <article class="chapter" data-shot="4">
+      <p class="eyebrow">Serie</p>
+      <h2>Jeder Tag zählt. Ein Joker fängt Ausrutscher auf.</h2>
+      <ul class="checks">
+        <li>Deine Flamme wächst mit jedem erledigten Tag</li>
+        <li>Verpasst? Nie zweimal. Der Coach plant um statt zu schimpfen.</li>
+        <li>Jeden Tag ein Aha aus der Forschung, mit Studie</li>
+      </ul>
+      <div class="phone inline"><img src="img/serie.jpg" alt="Serie mit Jahreskalender" width="506" height="1100" loading="lazy"></div>
+    </article>
   </div>
-  <div class="feature-art">
-    <div class="phone single"><img src="img/weg.jpg" alt="Profil mit dem Weg zum Traumkörper: Etappe 2 von 8" width="506" height="1100" loading="lazy"></div>
-    <img class="art-lion" src="img/loewe-figur.svg" alt="" width="300" height="400" loading="lazy">
-  </div>
-</section>
-
-<!-- FEATURE: ESSEN -->
-<section class="feature flip reveal">
-  <div class="feature-copy">
-    <p class="eyebrow">Essen</p>
-    <h2>Nie wieder überlegen, was du heute isst.</h2>
-    <ul class="checks">
-      <li>Wochenplan nach Ziel, Geschmack, Budget und Kochzeit, aus über 160 Gerichten</li>
-      <li>Einkaufsliste nach Supermarkt-Bereichen, teilbar mit deinem Partner</li>
-      <li>Döner statt Bowl? Eintippen oder fotografieren, der Coach plant den Rest des Tages um</li>
-      <li>Essenszeiten nach Aufstehen, Training und Schlaf. Auch im Ramadan.</li>
-    </ul>
-  </div>
-  <div class="feature-art duo">
-    <div class="phone tilt-l"><img src="img/essen.jpg" alt="Essen-Tab mit der nächsten Mahlzeit und dem Wochenplan" width="506" height="1100" loading="lazy"></div>
-    <div class="phone tilt-r"><img src="img/einkauf.jpg" alt="Einkaufsliste nach Supermarkt-Bereichen" width="506" height="1100" loading="lazy"></div>
-  </div>
-</section>
-
-<!-- FEATURE: TRAINING -->
-<section class="feature reveal">
-  <div class="feature-copy">
-    <p class="eyebrow">Training</p>
-    <h2>Ein Plan, der mit dir stärker wird.</h2>
-    <ul class="checks">
-      <li>Die Gewichte der letzten Einheit sind schon eingetragen</li>
-      <li>Die App sagt dir, wann du steigern kannst</li>
-      <li>86 Übungen, der Löwe macht sie dir vor</li>
-      <li>Läufst oder kickst du auch? Dein Training wird drumherum geplant</li>
-      <li>Keine Zeit? Plan B mit 20 Minuten, statt ganz auszufallen</li>
-    </ul>
-  </div>
-  <div class="feature-art">
-    <div class="phone single"><img src="img/training.jpg" alt="Training heute: Oberkörper A mit Plan B" width="506" height="1100" loading="lazy"></div>
-  </div>
-</section>
-
-<!-- FRIENDS -->
-<section id="freunde" class="friends reveal">
-  <div class="friends-head">
-    <p class="eyebrow">Zusammen</p>
-    <h2>Allein hört man auf. Zusammen nicht.</h2>
-  </div>
-  <div class="friend-grid">
-    <div class="fcard card"><span class="big">🔥</span><h3>Duo-Flamme</h3><p>Liefert ihr beide, wächst eure gemeinsame Flamme. Tag für Tag.</p></div>
-    <div class="fcard card"><span class="big">👊</span><h3>Anstupsen</h3><p>Dein Freund war heute noch nicht im Gym? Schick ihm einen Spruch, einen eigenen Satz oder eine Sprachnachricht.</p></div>
-    <div class="fcard card"><span class="big">📸</span><h3>Gym-Momente</h3><p>Ein Foto aus dem Training. Deine Freunde sehen es 24 Stunden lang.</p></div>
-    <div class="fcard card"><span class="big">🏆</span><h3>Challenges und Duelle</h3><p>30 Tage Handstand, ein Marathon oder ein Wochenduell gegen jemanden auf deinem Level.</p></div>
-    <div class="fcard card"><span class="big">🎁</span><h3>Freunde einladen</h3><p>Über deine Kontakte oder einen Link. Ihr bekommt beide 1 Monat Plus geschenkt.</p></div>
-    <div class="fcard card"><span class="big">🔒</span><h3>Privat bleibt privat</h3><p>Freunde sehen Haken und Serie. Nie dein Gewicht oder was du isst.</p></div>
-  </div>
-</section>
-
-<!-- STREAK + WISSEN -->
-<section class="bento reveal">
-  <div class="tile tile-streak card">
-    <p class="eyebrow">Serie</p>
-    <h3>Jeder Tag zählt. Ein Joker fängt Ausrutscher auf.</h3>
-    <div class="streak-num"><span class="flame-big">🔥</span><b data-count="58">0</b><small>Tage</small></div>
-    <div class="streak-shot"><img src="img/serie.jpg" alt="Serie mit Jahreskalender" width="506" height="1100" loading="lazy"></div>
-  </div>
-  <div class="tile tile-wissen card">
-    <p class="eyebrow">Tageswissen</p>
-    <h3>Jeden Tag ein Aha. Mit Studie.</h3>
-    <div class="facts">
-      <div class="fact"><b>21 Tage?</b> Eher 66.</div>
-      <div class="fact"><b>Wenig Schlaf</b> kostet Muskeln statt Fett.</div>
-      <div class="fact"><b>1.000 Sit-ups,</b> null Bauchfett weniger.</div>
-      <div class="fact"><b>10.000 Schritte</b> stammen aus einer Werbung.</div>
+  <div class="story-stage" aria-hidden="true">
+    <div class="stage-glow"></div>
+    <div class="phone stage">
+      <img class="on" src="img/essen.jpg" alt="" width="506" height="1100">
+      <img src="img/einkauf.jpg" alt="" width="506" height="1100" loading="lazy">
+      <img src="img/training.jpg" alt="" width="506" height="1100" loading="lazy">
+      <img src="img/weg.jpg" alt="" width="506" height="1100" loading="lazy">
+      <img src="img/serie.jpg" alt="" width="506" height="1100" loading="lazy">
     </div>
+    <div class="stage-dots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
   </div>
-  <div class="tile tile-rings card">
-    <div><p class="eyebrow">Ringe</p>
-    <h3>Alles abgehakt, alle Ringe voll.</h3>
-    <p class="tile-sub">Kalorien, Eiweiß, Kohlenhydrate und Fett. Weicht dein Tag ab, rechnet der Coach neu.</p></div>
-    <svg class="rings" viewBox="0 0 200 200" aria-hidden="true">
-      <circle cx="100" cy="100" r="86" class="r-bg r1"/><circle cx="100" cy="100" r="86" class="r r1" pathLength="100"/>
-      <circle cx="100" cy="100" r="66" class="r-bg r2"/><circle cx="100" cy="100" r="66" class="r r2" pathLength="100"/>
-      <circle cx="100" cy="100" r="46" class="r-bg r3"/><circle cx="100" cy="100" r="46" class="r r3" pathLength="100"/>
-      <circle cx="100" cy="100" r="26" class="r-bg r4"/><circle cx="100" cy="100" r="26" class="r r4" pathLength="100"/>
-    </svg>
+</section>
+
+<!-- FREUNDE: dunkle Bühne -->
+<section id="freunde" class="friends ember">
+  <div class="glow g3"></div><div class="grain"></div>
+  <div class="friends-inner">
+    <div class="friends-head reveal">
+      <p class="eyebrow">Zusammen</p>
+      <h2>Allein hört man auf.<br><span class="fire">Zusammen nicht.</span></h2>
+    </div>
+    <div class="bento">
+      <div class="tile t-duo reveal">
+        <span class="big">🔥</span><h3>Duo-Flamme</h3><p>Liefert ihr beide, wächst eure gemeinsame Flamme. Tag für Tag.</p>
+        <img src="img/freunde.jpg" alt="Freunde-Tab mit Duo-Flamme und Feed" width="506" height="1100" loading="lazy">
+      </div>
+      <div class="tile reveal"><span class="big">👊</span><h3>Anstupsen</h3><p>Dein Freund war heute noch nicht im Gym? Schick ihm einen Spruch, einen eigenen Satz oder eine Sprachnachricht.</p></div>
+      <div class="tile reveal"><span class="big">📸</span><h3>Gym-Momente</h3><p>Ein Foto aus dem Training. Deine Freunde sehen es 24 Stunden lang.</p></div>
+      <div class="tile reveal"><span class="big">🏆</span><h3>Challenges und Duelle</h3><p>30 Tage Handstand, ein Marathon oder ein Wochenduell gegen jemanden auf deinem Level.</p></div>
+      <div class="tile reveal"><span class="big">🔒</span><h3>Privat bleibt privat</h3><p>Freunde sehen Haken und Serie. Nie dein Gewicht oder was du isst.</p></div>
+    </div>
   </div>
 </section>
 
 <!-- COACHES -->
-<section class="coaches reveal">
-  <p class="eyebrow">Dein Coach</p>
-  <h2>Lisa oder Max. Locker, sachlich oder streng.</h2>
+<section class="coaches">
+  <p class="eyebrow reveal">Dein Coach</p>
+  <h2 class="reveal">Lisa oder Max. Locker, sachlich oder streng.</h2>
   <div class="coach-row">
-    <figure class="coach card"><img src="img/lisa-figur.svg" alt="Coach Lisa mit Stoppuhr" width="300" height="400" loading="lazy"><figcaption><b>Lisa</b><span>„Zuletzt fehlte oft die Zeit. Lieber 3 Trainings, die sicher stattfinden.“</span></figcaption></figure>
-    <figure class="coach card"><img src="img/max-figur.svg" alt="Coach Max mit Pfeife" width="300" height="400" loading="lazy"><figcaption><b>Max</b><span>„Gestern ausgelassen. Heute nicht. Tasche packen.“</span></figcaption></figure>
+    <figure class="coach card reveal"><img src="img/lisa-figur.svg" alt="Coach Lisa mit Stoppuhr" width="300" height="400" loading="lazy"><figcaption><b>Lisa</b><q>Zuletzt fehlte oft die Zeit. Lieber 3 Trainings, die sicher stattfinden.</q></figcaption></figure>
+    <figure class="coach card reveal"><img src="img/max-figur.svg" alt="Coach Max mit Pfeife" width="300" height="400" loading="lazy"><figcaption><b>Max</b><q>Gestern ausgelassen. Heute nicht. Tasche packen.</q></figcaption></figure>
   </div>
 </section>
 
-<!-- PRICING -->
-<section id="preise" class="pricing reveal">
-  <p class="eyebrow">Preise</p>
-  <h2>Gratis dranbleiben. Mit Plus plant der Coach alles.</h2>
+<!-- PREISE -->
+<section id="preise" class="pricing">
+  <p class="eyebrow reveal">Preise</p>
+  <h2 class="reveal">Gratis dranbleiben. Mit Plus plant der Coach alles.</h2>
+  <div class="billing reveal" role="group" aria-label="Abrechnung">
+    <button type="button" class="on" data-bill="year" aria-pressed="true">Jährlich</button>
+    <button type="button" data-bill="month" aria-pressed="false">Monatlich</button>
+  </div>
   <div class="plans">
-    <div class="plan card">
+    <div class="plan card reveal">
       <h3>Kostenlos</h3>
       <p class="price">0 €</p>
+      <p class="price-alt">für immer</p>
       <ul class="checks">
         <li>Trainingsplan und Abhaken</li><li>Serie mit Joker</li><li>Freunde, Duo-Flamme, Challenges</li>
         <li>Dein Weg zum Traumkörper</li><li>Tageswissen und Nährwert-Ringe</li><li>Eigene Rezepte, geteilte Einkaufsliste</li>
       </ul>
     </div>
-    <div class="plan plan-plus card">
-      <span class="badge">Early Bird</span>
+    <div class="plan plan-plus reveal">
       <h3>Increvio Plus</h3>
-      <p class="price">79 € <small>pro Jahr</small></p>
-      <p class="price-alt">nur 6,58 € im Monat · oder 9,99 € monatlich · Jahresabo 14 Tage gratis testen</p>
+      <div class="bill-year">
+        <p class="price">5 € <small>im Monat</small></p>
+        <p class="price-alt">59,99 € pro Jahr · die ersten 14 Tage gratis</p>
+      </div>
+      <div class="bill-month" hidden>
+        <p class="price">12,99 € <small>im Monat</small></p>
+        <p class="price-alt">monatlich kündbar</p>
+      </div>
       <ul class="checks">
-        <li>Essensplan für die ganze Woche</li><li>Einkaufsliste und Prep-Anleitung</li><li>Umplanen per KI</li>
-        <li>Jede Woche ein Joker, Serie reparieren</li><li>Wer früh dabei ist, behält diesen Preis</li>
+        <li>Alles aus Kostenlos</li><li>Essensplan für die ganze Woche</li><li>Einkaufsliste und Prep-Anleitung</li>
+        <li>Umplanen per KI</li><li>Jede Woche ein Joker, Serie reparieren</li>
       </ul>
     </div>
   </div>
-  <div class="gifts">
-    <div class="gift">🎁 Zum Start schenkt dir Leo 7 Tage Plus, ganz ohne Abo.</div>
-    <div class="gift">👥 Lädst du einen Freund ein, bekommt ihr beide 1 Monat Plus.</div>
+  <div class="gifts reveal">
+    <p>🎁 Zum Start schenkt dir Leo 7 Tage Plus, ganz ohne Abo.</p>
+    <p>👥 Lädst du einen Freund ein, bekommt ihr beide 1 Monat Plus.</p>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="faq reveal">
-  <h2>Fragen</h2>
+<section class="faq">
+  <h2 class="reveal">Fragen</h2>
+  <div class="faq-list reveal">
   <details><summary>Wie kann ich Increvio jetzt schon testen?</summary><p>Über TestFlight, Apples kostenlose Test-App: Link öffnen, TestFlight installieren, Increvio laden. Was dir auffällt, kannst du direkt per Screenshot schicken.</p></details>
   <details><summary>Für wen ist Increvio?</summary><p>Für alle ab 18, die Muskeln aufbauen, abnehmen oder ihre Form halten wollen. Egal ob Anfänger oder erfahren, im Gym oder zu Hause.</p></details>
   <details><summary>Brauche ich ein Konto?</summary><p>Nein. Ohne Konto bleibt alles auf deinem iPhone. Für Freunde und die Sicherung meldest du dich mit Apple oder per Code an deine E-Mail an.</p></details>
   <details><summary>Sehen meine Freunde mein Gewicht?</summary><p>Nein. Freunde sehen nur Haken, deine Serie, Punkte und erledigte Trainings. Gewicht und Essen bleiben privat, außer du teilst einen Erfolg ausdrücklich selbst.</p></details>
-  <details><summary>Funktioniert Increvio mit Apple Health?</summary><p>Ja, wenn du willst. Increvio liest dein Gewicht von der Waage und Sport wie Laufen oder Radfahren. Diese Gesundheitsdaten bleiben auf deinem iPhone.</p></details>
+  <details><summary>Funktioniert Increvio mit Apple Health?</summary><p>Ja, wenn du willst. Increvio liest dein Gewicht von der Waage, deine Schritte und Sport wie Laufen oder Radfahren. Diese Gesundheitsdaten bleiben auf deinem iPhone.</p></details>
   <details><summary>Wo liegen meine Daten?</summary><p>Ohne Konto nur auf deinem iPhone. Mit Konto in Frankfurt (EU). Gesundheitsdaten nur mit deiner ausdrücklichen Einwilligung.</p></details>
   <details><summary>Ist das eine Diät-App?</summary><p>Nein. Increvio ist eine Wellness-App. Sie stellt keine Diagnosen und ersetzt keine ärztliche Beratung. Die Ziele beruhen auf anerkannten Studien, nicht auf Crash-Diäten.</p></details>
-  <details><summary>Kann ich Plus jederzeit kündigen?</summary><p>Ja, mit wenigen Fingertipps in den Einstellungen deines iPhones unter „Apple-Account“ und „Abonnements“.</p></details>
+  <details><summary>Kann ich Plus jederzeit kündigen?</summary><p>Ja, mit wenigen Fingertipps in den Einstellungen deines iPhones unter „Apple-Account“ und „Abonnements“. Kündigst du in den ersten 14 Tagen, zahlst du nichts.</p></details>
+  </div>
 </section>
 
-<!-- FINAL CTA -->
-<section id="start" class="final reveal">
-  <div class="final-box card">
+<!-- SCHLUSS -->
+<section id="start" class="final ember">
+  <div class="glow g1"></div><div class="grain"></div>
+  <div class="final-inner reveal">
     <img class="final-lion" src="img/loewe-happy.svg" alt="" width="300" height="400" loading="lazy">
-    <h2>Ab 10. November im App Store.</h2>
+    <h2>Ab 10. November<br>im <span class="fire">App Store.</span></h2>
     <p>Bis dahin bist du in der Beta dabei. Und diesmal ziehst du durch.</p>
     <a class="btn-primary" href="https://testflight.apple.com/join/SUXFCQPe">Jetzt Beta testen</a>
   </div>
@@ -261,24 +285,65 @@
   </div>
 </footer>
 
+<!-- Daumen-Zone: Hauptaktion unten, sobald der Hero-Knopf aus dem Bild ist (nur Handy) -->
+<a class="dock" href="https://testflight.apple.com/join/SUXFCQPe">Jetzt Beta testen</a>
+
 <script>
-// Einblenden beim Scrollen, Zahlen hochzählen, Ringe füllen. Bei „Bewegung reduzieren“ sofort fertig.
+// Einblenden, Zahlen zählen, Punkte bauen, Handy-Kapitel wechseln, Preis umschalten, Dock zeigen.
+// Bei „Bewegung reduzieren“ ist alles sofort fertig.
 (() => {
   const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const count = el => {
     const end = +el.dataset.count;
     if (still) { el.textContent = end; return; }
-    const t0 = performance.now(), dur = 1200;
+    const t0 = performance.now(), dur = 1400;
     const tick = t => { const p = Math.min((t - t0) / dur, 1); el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(tick); };
     requestAnimationFrame(tick);
   };
+
+  const dots = document.querySelector('.dots');
+  for (let i = 0; i < 100; i++) {
+    const d = document.createElement('i');
+    if ([12, 37, 58, 71, 94].includes(i)) d.className = 'lit';
+    d.style.setProperty('--i', i);
+    dots.appendChild(d);
+  }
+
   const io = new IntersectionObserver(entries => entries.forEach(e => {
     if (!e.isIntersecting) return;
     e.target.classList.add('in');
     e.target.querySelectorAll('[data-count]').forEach(count);
+    if (e.target.dataset.count) count(e.target);
     io.unobserve(e.target);
-  }), { threshold: 0.15 });
+  }), { threshold: 0.2 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const shots = document.querySelectorAll('.phone.stage img');
+  const pips = document.querySelectorAll('.stage-dots i');
+  const chapters = document.querySelectorAll('.chapter');
+  const sio = new IntersectionObserver(entries => entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const n = +e.target.dataset.shot;
+    chapters.forEach(c => c.classList.toggle('active', c === e.target));
+    shots.forEach((s, i) => s.classList.toggle('on', i === n));
+    pips.forEach((p, i) => p.classList.toggle('on', i === n));
+  }), { rootMargin: '-45% 0px -45% 0px' });
+  chapters.forEach(c => sio.observe(c));
+
+  document.querySelectorAll('.billing button').forEach(b => b.addEventListener('click', () => {
+    const year = b.dataset.bill === 'year';
+    document.querySelectorAll('.billing button').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
+    document.querySelector('.bill-year').hidden = !year;
+    document.querySelector('.bill-month').hidden = year;
+  }));
+
+  const dock = document.querySelector('.dock');
+  const heroBtn = document.querySelector('.hero .btn-primary');
+  const finalBtn = document.querySelector('.final .btn-primary');
+  let heroGone = false, finalSeen = false;
+  const sync = () => dock.classList.toggle('show', heroGone && !finalSeen);
+  new IntersectionObserver(([e]) => { heroGone = !e.isIntersecting && e.boundingClientRect.top < 0; sync(); }).observe(heroBtn);
+  new IntersectionObserver(([e]) => { finalSeen = e.isIntersecting; sync(); }).observe(finalBtn);
 })();
 </script>
 </body>
