@@ -143,18 +143,22 @@ h1 { font-size: clamp(52px, 8.4vw, 112px); font-weight: 900; letter-spacing: -.0
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 .hint { margin: 16px 0 0; font-size: 14px; color: var(--night-muted); }
 
-.hero-stage { position: relative; height: 640px; perspective: 1600px; }
-.fan { position: absolute; inset: 0; transform-style: preserve-3d; }
+/* Jedes Handy hat seine eigene Perspektive (perspective() im transform). Ein gemeinsamer 3D-Raum (preserve-3d)
+   ließ die schräg gestellten Handys einander durchschneiden und hebelte z-index aus (24.10.). */
+.hero-stage { position: relative; height: 640px; }
+.fan { position: absolute; inset: 0; }
 .phone {
   border-radius: 40px; overflow: hidden; background: #000; padding: 6px;
+  /* Safari: runde Ecken bleiben beim Drehen sauber abgeschnitten. */
+  -webkit-mask-image: -webkit-radial-gradient(white, black); backface-visibility: hidden;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, .1), 0 40px 80px -24px rgba(0, 0, 0, .7), 0 24px 64px -24px rgba(226, 61, 26, .45);
 }
 .phone img { border-radius: 34px; width: 100%; height: auto; }
 .fan .phone { position: absolute; width: 268px; left: 50%; top: 50%; }
-.f-main { transform: translate(-50%, -50%) rotateY(-14deg) rotateX(6deg); z-index: 3; animation: float 7s ease-in-out infinite; }
-.f-left { transform: translate(-108%, -46%) rotateY(-24deg) rotateZ(-8deg) scale(.86); opacity: .8; z-index: 1; }
-.f-right { transform: translate(8%, -54%) rotateY(-4deg) rotateZ(7deg) scale(.86); opacity: .8; z-index: 2; }
-@keyframes float { 50% { transform: translate(-50%, -53%) rotateY(-10deg) rotateX(4deg); } }
+.f-main { transform: translate(-50%, -50%) perspective(1600px) rotateY(-14deg) rotateX(6deg); z-index: 3; animation: float 7s ease-in-out infinite; }
+.f-left { transform: translate(-108%, -46%) perspective(1600px) rotateY(-24deg) rotateZ(-8deg) scale(.86); filter: brightness(.78); z-index: 1; }
+.f-right { transform: translate(8%, -54%) perspective(1600px) rotateY(-4deg) rotateZ(7deg) scale(.86); filter: brightness(.78); z-index: 2; }
+@keyframes float { 50% { transform: translate(-50%, -53%) perspective(1600px) rotateY(-10deg) rotateX(4deg); } }
 .chip {
   position: absolute; z-index: 5; display: inline-flex; align-items: center; gap: 8px;
   padding: 12px 16px; border-radius: 18px; font-size: 15px; font-weight: 600; color: var(--text); white-space: nowrap;
