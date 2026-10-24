@@ -33,9 +33,10 @@
 </div>
 <div class="stack">
   <a class="btn" id="open" href="increvio://">In der App öffnen</a>
-  <a class="btn ghost" href="https://testflight.apple.com/join/SUXFCQPe">App laden</a>
+  <a class="btn ghost" id="get" href="https://testflight.apple.com/join/SUXFCQPe">App laden</a>
 </div>
-<p class="note">Noch keine App? Erst laden, dann diesen Link noch mal antippen oder den Code unter „Freunde“ eingeben.</p>
+<p class="note" id="hint">Noch keine App? Erst laden, dann diesen Link noch mal antippen oder den Code unter „Freunde“ eingeben.</p>
+<p class="note" id="copied" hidden>Einladung kopiert. Nach dem Laden in der App auf „Eingeladen? Einsetzen“ tippen.</p>
 </div>
 <div id="missing">
 <h1>Seite nicht gefunden</h1>
@@ -55,6 +56,17 @@
     document.getElementById("withCode").hidden = false;
     document.getElementById("open").href = "increvio://invite/" + code + (extra.toString() ? "?" + extra.toString() : "");
     document.getElementById("invite").hidden = false;
+    // Einladung nicht verlieren (24.10.): Link beim Tippen auf „App laden“ in die Zwischenablage legen.
+    // Die App bietet ihn auf der ersten Seite zum Einfügen an.
+    var link = location.origin + "/i/" + code + (extra.toString() ? "?" + extra.toString() : "");
+    document.getElementById("get").addEventListener("click", function () {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(link).then(function () {
+          document.getElementById("hint").hidden = true;
+          document.getElementById("copied").hidden = false;
+        }).catch(function () {});
+      }
+    });
     document.getElementById("missing").hidden = true;
   }
 </script>
