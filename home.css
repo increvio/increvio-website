@@ -161,7 +161,7 @@ h1 { font-size: clamp(52px, 8.4vw, 112px); font-weight: 900; letter-spacing: -.0
 @keyframes float { 50% { transform: translate(-50%, -53%) perspective(1600px) rotateY(-10deg) rotateX(4deg); } }
 .chip {
   position: absolute; z-index: 5; display: inline-flex; align-items: center; gap: 8px;
-  padding: 12px 16px; border-radius: 18px; font-size: 15px; font-weight: 600; color: var(--text); white-space: nowrap;
+  padding: 12px 16px; border-radius: 18px; font-size: 15px; font-weight: 600; color: #241A15; white-space: nowrap;
   background: rgba(255, 252, 250, .92); border: 1px solid rgba(255, 255, 255, .6);
   -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
   box-shadow: 0 20px 40px -16px rgba(0, 0, 0, .55);
