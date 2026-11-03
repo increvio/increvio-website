@@ -414,3 +414,28 @@ details p { margin: 0; padding: 0 24px 24px; color: var(--muted); max-width: 680
   .dots i { opacity: 1; transform: none; }
   .bar span::after { transform: scaleX(calc(var(--v) / 100)); }
 }
+
+/* WARTELISTE (3.11.): E-Mail und Knopf in einer Reihe, auf dem Handy untereinander */
+.wait { display: flex; flex-wrap: wrap; gap: 12px; max-width: 520px; }
+.wait input[type=email] {
+  flex: 1 1 240px; min-height: 56px; padding: 0 20px; border-radius: 18px; font: 600 17px/1 var(--body);
+  background: var(--night-card); color: var(--night-text); border: 1px solid var(--night-border);
+}
+.wait input[type=email]::placeholder { color: var(--night-muted); }
+.wait input[type=email]:focus { outline: 3px solid var(--flame); outline-offset: 2px; }
+.wait button { border: 0; cursor: pointer; }
+.wait button:disabled { opacity: .6; cursor: default; transform: none; }
+.wait .hp, .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.wait-msg { flex-basis: 100%; margin: 0; min-height: 1.4em; font-size: 15px; font-weight: 600; color: var(--night-text); }
+.wait-msg:empty { display: none; }
+.wait-msg.bad { color: #FF8A73; }
+.wait.done input[type=email], .wait.done button { display: none; }
+.hint a { color: inherit; }
+.final .wait { margin: 0 auto; justify-content: center; }
+@media (max-width: 980px) { .hero .wait { margin: 0 auto; justify-content: center; } }
+@media (max-width: 680px) { .wait { flex-direction: column; align-items: stretch; } .wait input[type=email] { flex: none; } }
+.final .wait-msg { margin: 0; font-size: 15px; color: var(--night-text); }
+.wait-note { flex-basis: 100%; margin: 0; font-size: 13px; color: var(--night-muted); }
+.wait-note a { color: inherit; }
+.wait.done .wait-note { display: none; }
+.final .wait-note { margin: 0; font-size: 13px; }
