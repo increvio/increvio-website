@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Increvio. Diesmal bleibst du dran.</title>
-<meta name="description" content="Increvio plant dein Essen, deinen Einkauf und dein Training. Freunde, deine Serie und dein Weg zum Traumkörper halten dich dran. Jetzt in der Beta, ab 5. November im App Store.">
+<meta name="description" content="Increvio plant dein Essen, deinen Einkauf und dein Training. Freunde, deine Serie und dein Weg zum Traumkörper halten dich dran. Ab 5. November im App Store. Trag dich ein, wir sagen dir Bescheid.">
 <meta name="theme-color" content="#120D0B">
 <meta property="og:title" content="Increvio. Diesmal bleibst du dran.">
 <meta property="og:description" content="Dein Coach plant Essen, Einkauf und Training. Freunde, deine Serie und dein Weg zum Traumkörper halten dich dran.">
@@ -24,7 +24,7 @@
     <a href="#app">Die App</a>
     <a href="#freunde">Freunde</a>
     <a href="#preise">Preise</a>
-    <a class="nav-cta" href="https://testflight.apple.com/join/SUXFCQPe">Beta testen</a>
+    <a class="nav-cta" href="#start">Warteliste</a>
   </nav>
 </header>
 
@@ -33,17 +33,19 @@
   <div class="glow g1"></div><div class="glow g2"></div><div class="grain"></div>
   <div class="hero-inner">
     <div class="hero-copy">
-      <p class="pill"><span class="dot"></span>Beta offen · im App Store ab 5. November</p>
+      <p class="pill"><span class="dot"></span>Im App Store ab 5. November</p>
       <h1>Diesmal<br>bleibst du <span class="fire">dran.</span></h1>
       <p class="lead">Du weißt, was du tun müsstest. Increvio sorgt dafür, dass du es tust: Dein Coach plant Essen, Einkauf und Training, und deine Freunde sehen, ob du lieferst.</p>
-      <div class="cta-row">
-        <a class="btn-primary" href="https://testflight.apple.com/join/SUXFCQPe">
-          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.47-.03-.01-2.3-.88-2.32-3.5zM14.2 6.14c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.67-.92 2.66.97.08 1.96-.49 2.56-1.21z"/></svg>
-          Jetzt Beta testen
-        </a>
-        <a class="btn-ghost" href="#so-gehts">So funktioniert's</a>
-      </div>
-      <p class="hint">Kostenlos über TestFlight, Apples Test-App. Für iPhone.</p>
+      <!-- warteliste -->
+      <form class="wait" id="wait-hero" novalidate>
+        <label class="sr" for="wait-hero-mail">E-Mail-Adresse</label>
+        <input id="wait-hero-mail" type="email" name="email" placeholder="Deine E-Mail" autocomplete="email" inputmode="email" required>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn-primary" type="submit">Benachrichtigen</button>
+        <p class="wait-msg" role="status" aria-live="polite"></p>
+        <p class="wait-note">Eine Mail am Launch-Tag, danach löschen wir deine Adresse. <a href="datenschutz/">Datenschutz</a></p>
+      </form>
+      <!-- /warteliste -->
     </div>
     <div class="hero-stage" aria-hidden="true">
       <div class="fan">
@@ -259,7 +261,7 @@
 <section class="faq">
   <h2 class="reveal">Fragen</h2>
   <div class="faq-list reveal">
-  <details><summary>Wie kann ich Increvio jetzt schon testen?</summary><p>Über TestFlight, Apples kostenlose Test-App: Link öffnen, TestFlight installieren, Increvio laden. Was dir auffällt, kannst du direkt per Screenshot schicken.</p></details>
+  <details><summary>Wann kann ich Increvio laden?</summary><p>Ab 5. November im App Store, für iPhone. Trag dich oben in die Warteliste ein, dann bekommst du am Launch-Tag eine Mail mit dem Link. Danach löschen wir deine Adresse.</p></details>
   <details><summary>Für wen ist Increvio?</summary><p>Für alle ab 18, die Muskeln aufbauen, abnehmen oder ihre Form halten wollen. Egal ob Anfänger oder erfahren, im Gym oder zu Hause.</p></details>
   <details><summary>Brauche ich ein Konto?</summary><p>Nein. Ohne Konto bleibt alles auf deinem iPhone. Für Freunde und die Sicherung meldest du dich mit Apple oder per Code an deine E-Mail an.</p></details>
   <details><summary>Sehen meine Freunde mein Gewicht?</summary><p>Nein. Freunde sehen nur Haken, deine Serie, Punkte und erledigte Trainings. Gewicht und Essen bleiben privat, außer du teilst einen Erfolg ausdrücklich selbst.</p></details>
@@ -276,8 +278,17 @@
   <div class="final-inner reveal">
     <img class="final-lion" src="img/loewe-happy.svg" alt="" width="300" height="400" loading="lazy">
     <h2>Ab 5. November<br>im <span class="fire">App Store.</span></h2>
-    <p>Bis dahin bist du in der Beta dabei. Und diesmal ziehst du durch.</p>
-    <a class="btn-primary" href="https://testflight.apple.com/join/SUXFCQPe">Jetzt Beta testen</a>
+    <p>Trag dich ein und erfahr als Erstes, wenn es losgeht. Und diesmal ziehst du durch.</p>
+    <!-- warteliste -->
+    <form class="wait" id="wait-final" novalidate>
+      <label class="sr" for="wait-final-mail">E-Mail-Adresse</label>
+      <input id="wait-final-mail" type="email" name="email" placeholder="Deine E-Mail" autocomplete="email" inputmode="email" required>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn-primary" type="submit">Benachrichtigen</button>
+      <p class="wait-msg" role="status" aria-live="polite"></p>
+        <p class="wait-note">Eine Mail am Launch-Tag, danach löschen wir deine Adresse. <a href="datenschutz/">Datenschutz</a></p>
+    </form>
+    <!-- /warteliste -->
   </div>
 </section>
 
@@ -290,7 +301,7 @@
 </footer>
 
 <!-- Daumen-Zone: Hauptaktion unten, sobald der Hero-Knopf aus dem Bild ist (nur Handy) -->
-<a class="dock" href="https://testflight.apple.com/join/SUXFCQPe">Jetzt Beta testen</a>
+<a class="dock" href="#start">Auf die Warteliste</a>
 
 <script>
 // Einblenden, Zahlen zählen, Punkte bauen, Handy-Kapitel wechseln, Preis umschalten, Dock zeigen.
@@ -339,6 +350,27 @@
     document.querySelectorAll('.billing button').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
     document.querySelector('.bill-year').hidden = !year;
     document.querySelector('.bill-month').hidden = year;
+  }));
+
+  // Warteliste: Eintragen ohne Neuladen. Bestätigt wird per Mail (Double Opt-in).
+  const API = 'https://wztsompwcszmmfxodkvg.supabase.co/functions/v1/waitlist';
+  document.querySelectorAll('form.wait').forEach(form => form.addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const mail = form.elements.email, msg = form.querySelector('.wait-msg'), btn = form.querySelector('button');
+    const say = (text, bad) => { msg.textContent = text; msg.classList.toggle('bad', !!bad); };
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail.value.trim())) { say('Bitte gib eine gültige E-Mail ein.', true); mail.focus(); return; }
+    btn.disabled = true; say('Einen Moment …');
+    try {
+      // text/plain: einfache Anfrage ohne Vorab-Prüfung (CORS).
+      const res = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ action: 'join', email: mail.value.trim(), website: form.elements.website.value }) });
+      if (!res.ok) throw res.status;
+      form.classList.add('done');
+      say('Fast geschafft. Bitte bestätige den Link in deinem Postfach.');
+    } catch (e) {
+      say(e === 400 ? 'Bitte gib eine gültige E-Mail ein.' : 'Das hat nicht geklappt. Bitte versuch es gleich noch mal.', true);
+      btn.disabled = false;
+    }
   }));
 
   const dock = document.querySelector('.dock');
