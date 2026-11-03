@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <meta name="referrer" content="no-referrer">
-<title>Warteliste | Increvio</title>
+<title>Waitlist | Increvio</title>
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -25,32 +25,32 @@
   <!-- Warteliste (3.11.): Bestätigen (Double Opt-in) und Abmelden. Der Token steht hinter „#“ und geht nur an Supabase. -->
   <div class="box">
     <section id="confirm" hidden>
-      <h1>Bescheid bekommen?</h1>
-      <p>Wir schicken dir genau eine Mail: am Tag, an dem Increvio im App Store erscheint. Danach löschen wir deine Adresse.</p>
-      <p><button class="btn" id="yes">Ja, Bescheid geben</button></p>
-      <p><button class="link" id="no">Nein danke, austragen</button></p>
+      <h1>Get notified?</h1>
+      <p>We'll send you exactly one email: on the day Increvio launches on the App Store. After that, we delete your address.</p>
+      <p><button class="btn" id="yes">Yes, notify me</button></p>
+      <p><button class="link" id="no">No thanks, remove me</button></p>
     </section>
-    <section id="busy" hidden><p>Einen Moment …</p></section>
+    <section id="busy" hidden><p>One moment…</p></section>
     <section id="confirmed" hidden>
-      <h1>Du bist dabei.</h1>
-      <p>Sobald Increvio im App Store ist, bekommst du eine Mail mit dem Link.</p>
-      <p><a class="btn" href="../">Increvio ansehen</a></p>
+      <h1>You're on the list.</h1>
+      <p>As soon as Increvio is on the App Store, you'll get an email with the link.</p>
+      <p><a class="btn" href="../">See Increvio</a></p>
     </section>
     <section id="unsubscribed" hidden>
-      <h1>Du bist ausgetragen.</h1>
-      <p>Deine Adresse ist gelöscht. Du bekommst keine Mail von uns.</p>
+      <h1>You've been removed.</h1>
+      <p>Your address has been deleted. You won't get any email from us.</p>
     </section>
     <section id="failed" hidden>
-      <h1>Das hat nicht geklappt.</h1>
-      <p id="reason">Der Link ist ungültig oder du bist schon ausgetragen.</p>
-      <p><a class="btn" href="../#start">Neu eintragen</a></p>
-      <p class="note">Fragen? <a href="mailto:support@increvio.com">support@increvio.com</a></p>
+      <h1>That didn't work.</h1>
+      <p id="reason">The link is invalid or you've already been removed.</p>
+      <p><a class="btn" href="../#start">Sign up again</a></p>
+      <p class="note">Questions? <a href="mailto:support@increvio.com">support@increvio.com</a></p>
     </section>
   </div>
 </main>
 <footer class="site"><div class="wrap">
   <span>© 2026 Increvio</span>
-  <nav><a href="../impressum/">Impressum</a><a href="../datenschutz/">Datenschutz</a><a href="../support/">Support</a></nav>
+  <nav><a href="../impressum/">Legal notice</a><a href="../datenschutz/">Privacy</a><a href="../support/">Support</a></nav>
 </div></footer>
 <script>
 (function () {
