@@ -71,6 +71,8 @@ section { padding: clamp(88px, 12vw, 160px) 20px; max-width: 1200px; margin: 0 a
 .fire {
   background: linear-gradient(100deg, var(--flame) 0%, var(--ember-a) 40%, var(--ember-b) 100%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
+  /* Der Verlauf endet sonst an der Schriftbox und schneidet g, y und p unten ab. */
+  padding-bottom: .16em; -webkit-box-decoration-break: clone; box-decoration-break: clone;
 }
 .hl { color: var(--glut); }
 
