@@ -382,3 +382,6 @@ mark.todo { background: #FFF1C2; color: #6B4E00; padding: 0 .2em; border-radius:
 .num { background: var(--btn); box-shadow: 0 4px 0 var(--btn-deep); }
 .bento .wide p, .final p { color: #fff; }
 .t-gold { background: #F2A20C; }
+.cat-apps { --tint: var(--purple-tint); --tagc: var(--tag-purple); }
+:root { --tag-purple: #6D3FD9; }
+@media (prefers-color-scheme: dark) { :root { --tag-purple: #B79CFB; } }
