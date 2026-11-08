@@ -3,9 +3,9 @@
   --glut: #E8441F;
   --glut-text: #C9381A;      /* etwas dunkler, damit Text auf Hell gut lesbar ist */
   --on-glut: #fff;
-  --bg: #FFF8F4;             /* Canvas */
+  --bg: #FFFFFF;             /* Canvas (weiß seit 8.11.) */
   --card: #FFFFFF;           /* CardSurface */
-  --border: #F1DDD3;         /* CardBorder */
+  --border: #E5E5E5;         /* CardBorder */
   --text: #1C1512;
   --muted: #6E625C;
   --todo-bg: #FFF1C2;

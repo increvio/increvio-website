@@ -1,47 +1,51 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
+<meta name="robots" content="noindex">
 <meta charset="utf-8">
 <meta name="apple-itunes-app" content="app-id=6825500313">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Einladung zu Increvio</title>
-<meta name="description" content="Du wurdest zu Increvio eingeladen. Zusammen bleibt ihr dran, und ihr bekommt beide 30 Tage Plus gratis.">
-<meta property="og:title" content="Du wurdest zu Increvio eingeladen">
-<meta property="og:description" content="Zusammen dranbleiben. Über den Link bekommt ihr beide 30 Tage Plus gratis.">
-<meta property="og:image" content="https://increvio.com/img/essen.jpg">
+<title>Page not found | Increvio</title>
+<meta name="description" content="You have been invited to Increvio. Stick with it together, and you both get 30 days of Plus for free.">
+<meta property="og:title" content="You have been invited to Increvio">
+<meta property="og:description" content="Stick with it together. With this link you both get 30 days of Plus for free.">
+<meta property="og:image" content="https://increvio.com/img/og-home.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/site.css">
 <style>
   .code { font-family: var(--title); font-size: 2.6rem; letter-spacing: .25em; font-weight: 800; margin: .3em 0; }
   .stack { display: flex; flex-direction: column; gap: 12px; max-width: 360px; }
   .stack .btn { text-align: center; justify-content: center; }
-  .btn.ghost { background: transparent; color: var(--glut-text); border: 2px solid var(--glut); }
+  .wrap.narrow { max-width: 560px; padding-top: 48px; padding-bottom: 64px; }
+  .note { color: var(--muted); font-size: 16px; }
 </style>
 </head>
 <body>
-<header class="site"><div class="wrap">
-  <a class="logo" href="/"><img src="/favicon.svg" alt="" width="30" height="30">Increvio</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/"><img src="/img/app-icon-192.jpg" alt="" width="34" height="34">increvio</a>
+  <nav aria-label="Main"><a href="/guides/">Guides</a></nav>
 </div></header>
 <main class="wrap narrow">
 <div id="invite" hidden>
-<h1>Du wurdest eingeladen 💪</h1>
-<p>Zusammen bleibt ihr dran. Über diese Einladung bekommt ihr beide <strong>30 Tage Plus gratis</strong>.</p>
+<h1>You've been invited</h1>
+<p class="sub">Together you stick with it. With this invite you both get <strong>30 days of Plus for free</strong>.</p>
 <div id="withCode" hidden>
-  <p class="note">Dein Einladungscode</p>
+  <p class="note">Your invite code</p>
   <p class="code" id="code"></p>
 </div>
 <div class="stack">
-  <a class="btn" id="open" href="increvio://">In der App öffnen</a>
-  <a class="btn ghost" id="get" href="https://apps.apple.com/app/increvio/id6825500313">App laden</a>
+  <a class="btn" id="open" href="increvio://">Open in the app</a>
+  <a class="btn btn-light" id="get" href="https://apps.apple.com/app/increvio/id6825500313">Get the app</a>
 </div>
-<p class="note" id="hint">Noch keine App? Erst laden, dann diesen Link noch mal antippen oder den Code unter „Freunde“ eingeben.</p>
-<p class="note" id="copied" hidden>Einladung kopiert. Nach dem Laden in der App auf „Eingeladen? Einsetzen“ tippen.</p>
+<p class="note" id="hint">No app yet? Get it first, then tap this link again or enter the code in the Friends tab.</p>
+<p class="note" id="copied" hidden>Invite copied. After installing, open the app and paste it when asked, or tap this link again.</p>
 </div>
 <div id="missing">
-<h1>Seite nicht gefunden</h1>
-<p><a class="btn" href="/">Zur Startseite</a></p>
+<h1>Page not found</h1>
+<p class="sub">This page doesn't exist (anymore). Try the guides or go back home.</p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" href="/">Go home</a><a class="btn btn-light" href="/guides/">Read the guides</a></p>
 </div>
 </main>
 <script>
@@ -52,7 +56,7 @@
     var query = new URLSearchParams(location.search);
     var extra = new URLSearchParams();
     ["challenge", "workout"].forEach(function (k) { var v = query.get(k); if (v && /^\d+$/.test(v)) extra.set(k, v); });
-    document.title = "Einladung zu Increvio";
+    document.title = "Invitation to Increvio";
     document.getElementById("code").textContent = code;
     document.getElementById("withCode").hidden = false;
     document.getElementById("open").href = "increvio://invite/" + code + (extra.toString() ? "?" + extra.toString() : "");

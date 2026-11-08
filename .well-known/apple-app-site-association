@@ -6,5 +6,8 @@
         "components": [{ "/": "/i/*", "comment": "Einladungslinks öffnen die App" }]
       }
     ]
+  },
+  "appclips": {
+    "apps": ["ZV6F9S5488.com.increvio.Increvio.Clip"]
   }
 }
