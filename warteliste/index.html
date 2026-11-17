@@ -1,81 +1,9 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<meta name="referrer" content="no-referrer">
-<title>Waitlist | Increvio</title>
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="icon" href="../favicon.ico" sizes="any">
-<link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="../style.css">
-<style>
-  button.btn { border: 0; cursor: pointer; font: inherit; }
-  button.link { background: none; border: 0; padding: 0; color: var(--muted); text-decoration: underline; cursor: pointer; font: inherit; }
-  .box { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; margin-top: 24px; }
-  [hidden] { display: none !important; }
-</style>
-</head>
-<body>
-<header class="site"><div class="wrap">
-  <a class="logo" href="../"><img src="../favicon.svg" alt="" width="30" height="30">Increvio</a>
-</div></header>
-<main class="wrap narrow">
-  <!-- Warteliste (3.11.): Bestätigen (Double Opt-in) und Abmelden. Der Token steht hinter „#“ und geht nur an Supabase. -->
-  <div class="box">
-    <section id="confirm" hidden>
-      <h1>Get notified?</h1>
-      <p>We'll send you exactly one email: on the day Increvio launches on the App Store. After that, we delete your address.</p>
-      <p><button class="btn" id="yes">Yes, notify me</button></p>
-      <p><button class="link" id="no">No thanks, remove me</button></p>
-    </section>
-    <section id="busy" hidden><p>One moment…</p></section>
-    <section id="confirmed" hidden>
-      <h1>You're on the list.</h1>
-      <p>As soon as Increvio is on the App Store, you'll get an email with the link.</p>
-      <p><a class="btn" href="../">See Increvio</a></p>
-    </section>
-    <section id="unsubscribed" hidden>
-      <h1>You've been removed.</h1>
-      <p>Your address has been deleted. You won't get any email from us.</p>
-    </section>
-    <section id="failed" hidden>
-      <h1>That didn't work.</h1>
-      <p id="reason">The link is invalid or you've already been removed.</p>
-      <p><a class="btn" href="../#start">Sign up again</a></p>
-      <p class="note">Questions? <a href="mailto:support@increvio.com">support@increvio.com</a></p>
-    </section>
-  </div>
-</main>
-<footer class="site"><div class="wrap">
-  <span>© 2026 Increvio</span>
-  <nav><a href="../impressum/">Legal notice</a><a href="../datenschutz/">Privacy</a><a href="../support/">Support</a></nav>
-</div></footer>
-<script>
-(function () {
-  var API = "https://wztsompwcszmmfxodkvg.supabase.co/functions/v1/waitlist";
-  var match = location.hash.match(/^#(bestaetigen|abmelden)=([0-9a-f-]{36})$/i);
-  function show(id) {
-    ["confirm", "busy", "confirmed", "unsubscribed", "failed"].forEach(function (s) {
-      document.getElementById(s).hidden = s !== id;
-    });
-  }
-  function call(action, token, done) {
-    show("busy");
-    // text/plain: einfache Anfrage ohne Vorab-Prüfung (CORS).
-    fetch(API, { method: "POST", headers: { "Content-Type": "text/plain" }, body: JSON.stringify({ action: action, token: token }) })
-      .then(function (r) { show(r.ok ? done : "failed"); })
-      .catch(function () { show("failed"); });
-  }
-  if (!match) return show("failed");
-  var token = match[2];
-  history.replaceState(null, "", location.pathname);
-  if (match[1] === "abmelden") return call("leave", token, "unsubscribed");
-  show("confirm");
-  document.getElementById("yes").onclick = function () { call("confirm", token, "confirmed"); };
-  document.getElementById("no").onclick = function () { call("leave", token, "unsubscribed"); };
-})();
-</script>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Buffd has moved to buffd.app</title>
+<link rel="canonical" href="https://buffd.app/warteliste/">
+<meta http-equiv="refresh" content="0; url=https://buffd.app/warteliste/">
+<script>location.replace("https://buffd.app/warteliste/" + location.search + location.hash)</script>
+</head><body style="font-family:-apple-system,system-ui,sans-serif;padding:40px">
+<p>Increvio is now Buffd. This page moved to <a href="https://buffd.app/warteliste/">https://buffd.app/warteliste/</a>.</p>
+</body></html>

@@ -5,11 +5,11 @@
 <meta charset="utf-8">
 <meta name="apple-itunes-app" content="app-id=6825500313">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found | Increvio</title>
-<meta name="description" content="You have been invited to Increvio. Stick with it together, and you both get 30 days of Plus for free.">
-<meta property="og:title" content="You have been invited to Increvio">
+<title>Page not found | Buffd</title>
+<meta name="description" content="You have been invited to Buffd. Stick with it together, and you both get 30 days of Plus for free.">
+<meta property="og:title" content="You have been invited to Buffd">
 <meta property="og:description" content="Stick with it together. With this link you both get 30 days of Plus for free.">
-<meta property="og:image" content="https://increvio.com/img/og-home.jpg">
+<meta property="og:image" content="https://buffd.app/img/og-home.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -24,7 +24,7 @@
 </head>
 <body>
 <header class="nav"><div class="wrap">
-  <a class="brand" href="/"><img src="/img/app-icon-192.jpg" alt="" width="34" height="34">increvio</a>
+  <a class="brand" href="/" aria-label="Buffd home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="8 8 84 84" width="28" height="28" aria-hidden="true"><polygon points="50.00,11.00 83.77,30.50 83.77,69.50 50.00,89.00 16.23,69.50 16.23,30.50" fill="none" stroke="#0B0B0C" stroke-opacity="0.38" stroke-width="2.6" stroke-linejoin="round"/><polygon points="50.00,30.50 66.89,40.25 66.89,59.75 50.00,69.50 33.11,59.75 33.11,40.25" fill="none" stroke="#0B0B0C" stroke-opacity="0.2" stroke-width="1.4" stroke-linejoin="round"/><line x1="50" y1="50" x2="50.00" y2="11.00" stroke="#0B0B0C" stroke-opacity="0.16" stroke-width="1.2"/><line x1="50" y1="50" x2="83.77" y2="30.50" stroke="#0B0B0C" stroke-opacity="0.16" stroke-width="1.2"/><line x1="50" y1="50" x2="83.77" y2="69.50" stroke="#0B0B0C" stroke-opacity="0.16" stroke-width="1.2"/><line x1="50" y1="50" x2="50.00" y2="89.00" stroke="#0B0B0C" stroke-opacity="0.16" stroke-width="1.2"/><line x1="50" y1="50" x2="16.23" y2="69.50" stroke="#0B0B0C" stroke-opacity="0.16" stroke-width="1.2"/><line x1="50" y1="50" x2="16.23" y2="30.50" stroke="#0B0B0C" stroke-opacity="0.16" stroke-width="1.2"/><polygon points="50.00,12.95 75.33,35.38 66.89,59.75 50.00,83.15 39.87,55.85 28.05,37.32" fill="#E4E4E7" stroke="#0B0B0C" stroke-width="5.5" stroke-linejoin="round"/></svg><span>buffd</span></a>
   <nav aria-label="Main"><a href="/guides/">Guides</a></nav>
 </div></header>
 <main class="wrap narrow">
@@ -56,14 +56,15 @@
     var query = new URLSearchParams(location.search);
     var extra = new URLSearchParams();
     ["challenge", "workout"].forEach(function (k) { var v = query.get(k); if (v && /^\d+$/.test(v)) extra.set(k, v); });
-    document.title = "Invitation to Increvio";
+    document.title = "Invitation to Buffd";
     document.getElementById("code").textContent = code;
     document.getElementById("withCode").hidden = false;
     document.getElementById("open").href = "increvio://invite/" + code + (extra.toString() ? "?" + extra.toString() : "");
     document.getElementById("invite").hidden = false;
     // Einladung nicht verlieren (24.10.): Link beim Tippen auf „App laden“ in die Zwischenablage legen.
     // Die App bietet ihn auf der ersten Seite zum Einfügen an.
-    var link = location.origin + "/i/" + code + (extra.toString() ? "?" + extra.toString() : "");
+    // Die App erkennt bis zum nächsten Update nur increvio.com-Links, deshalb immer diese Adresse kopieren.
+    var link = "https://increvio.com/i/" + code + (extra.toString() ? "?" + extra.toString() : "");
     document.getElementById("get").addEventListener("click", function () {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(link).then(function () {
@@ -73,6 +74,8 @@
       }
     });
     document.getElementById("missing").hidden = true;
+  } else {
+    location.replace("https://buffd.app" + location.pathname + location.search + location.hash);
   }
 </script>
 </body>

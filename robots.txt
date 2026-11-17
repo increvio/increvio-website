@@ -1,6 +1,2 @@
 User-agent: *
 Allow: /
-Disallow: /zeuge/
-Disallow: /warteliste/
-
-Sitemap: https://increvio.com/sitemap.xml
