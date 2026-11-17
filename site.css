@@ -73,13 +73,26 @@ p { margin: 0; }
 .facts li { display: flex; align-items: center; gap: 7px; }
 .facts svg { color: var(--ink); }
 
-/* Gerät: echtes Bildschirmfoto im Rahmen */
-.device { position: relative; width: min(100%, 340px); margin: 0 auto; background: #0b0b0c; border-radius: 54px; padding: 11px; box-shadow: 0 30px 60px -28px rgba(0, 0, 0, .45); }
-.device img { border-radius: 44px; width: 100%; background: #fff; }
-.device::before { content: ""; position: absolute; top: 22px; left: 50%; transform: translateX(-50%); width: 30%; height: 26px; background: #0b0b0c; border-radius: 20px; z-index: 1; }
-.device.cut { border-bottom-left-radius: 0; border-bottom-right-radius: 0; padding-bottom: 0; }
-.device.cut img { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+/* Gerät: echtes Bildschirmfoto in einem iPhone-Rahmen (Titanrand, schwarzer Displayrand, Dynamic Island, Tasten).
+   Maße relativ zur Breite (Container-Einheiten). Insel gemessen am Simulator: 31,2 % breit, 9,1 % hoch, 3,5 % vom oberen Bildrand. */
+.device { container-type: inline-size; position: relative; width: min(100%, 340px); margin: 0 auto; }
 .device.small { width: min(100%, 300px); }
+.iphone { --frame: 1.15cqw; --bezel: 3cqw; --screen: calc(100cqw - 2 * (var(--frame) + var(--bezel)));
+  position: relative; border-radius: 17cqw; padding: var(--frame);
+  background: linear-gradient(150deg, #e9e9ec 0%, #a7a7ad 18%, #dcdce0 40%, #8f8f95 62%, #d2d2d6 82%, #9d9da3 100%);
+  box-shadow: 0 30px 60px -26px rgba(0, 0, 0, .42), 0 2px 6px rgba(0, 0, 0, .12), inset 0 0 0 .25cqw rgba(255, 255, 255, .55); }
+.iphone img { display: block; width: 100%; height: auto; box-sizing: border-box; border: var(--bezel) solid #070708; border-radius: 15.8cqw; background: #070708; }
+.iphone::before { content: ""; position: absolute; z-index: 2; left: 50%; transform: translateX(-50%);
+  top: calc(var(--frame) + var(--bezel) + var(--screen) * .0348); width: calc(var(--screen) * .312); height: calc(var(--screen) * .0912);
+  background: #000; border-radius: 999px; }
+/* Tasten: links Action-Taste und Lautstärke, rechts Seitentaste und Kamerasteuerung */
+.device::before, .device::after { content: ""; position: absolute; width: .9cqw; border-radius: .6cqw; background: linear-gradient(90deg, #8a8a90, #c8c8cc); }
+.device::before { left: -.75cqw; top: 22cqw; height: 9cqw; box-shadow: 0 14cqw 0 0 #a3a3a8, 0 29cqw 0 0 #a3a3a8; }
+.device::after { right: -.75cqw; top: 36cqw; height: 22cqw; box-shadow: 0 46cqw 0 -.05cqw #a3a3a8; }
+.device:not(.cut)::after { box-shadow: none; }
+/* Abgeschnitten: unten offen, damit das Telefon aus der Karte herausläuft */
+.device.cut .iphone { border-bottom-left-radius: 0; border-bottom-right-radius: 0; padding-bottom: 0; }
+.device.cut .iphone img { border-bottom: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 .shot-card { border-radius: var(--radius); overflow: hidden; background: #fff; box-shadow: var(--shadow); border: 1px solid var(--line); }
 
 /* Problem */
@@ -98,7 +111,8 @@ p { margin: 0; }
 .block p { color: var(--muted); margin-top: 10px; }
 .block ul { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .block ul li { background: #fff; border-radius: 999px; padding: 6px 12px; font-size: 14px; font-weight: 500; }
-.block .device { margin-top: 32px; width: 86%; }
+.block > p { margin-bottom: 32px; }
+.block .device { margin-top: auto; width: 86%; }
 
 /* Zone */
 .zone { display: grid; gap: 48px; margin-top: 56px; align-items: start; }
